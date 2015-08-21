@@ -1,5 +1,5 @@
-process /bin/bash -c
-sbcl32 --noinform --disable-ldb --end-runtime-options --disable-debugger --end-toplevel-options <'/tmp/tmpSVJWWVYG.tmp' &>'/tmp/tmpDR1MTKJH.tmp'
+process /bin/bash
+-c sbcl32 --noinform --disable-ldb --end-runtime-options --disable-debugger --end-toplevel-options <'/tmp/tmp8ESK6FB7.tmp' &>'/tmp/tmpNP2BTE1F.tmp'
 returned 1
 
 
