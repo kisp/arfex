@@ -1,0 +1,2025 @@
+
+* 
+(PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+* 
+
+
+(let (list)
+  (loop
+    (room)
+    (loop repeat 100000
+          do (push 3 list)))
+  (length list))
+
+Dynamic space usage is:   57,791,576 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  12,309,328 bytes for    19,790 code objects.
+  11,911,480 bytes for 1,488,935 cons objects.
+   9,283,448 bytes for   142,398 simple-vector objects.
+   9,177,256 bytes for   205,716 instance objects.
+   4,690,816 bytes for    74,024 simple-array-unsigned-byte-32 objects.
+   3,193,800 bytes for    39,246 simple-character-string objects.
+   7,454,384 bytes for   328,904 other objects.
+  58,020,512 bytes for 2,299,013 dynamic objects (space total.)
+Dynamic space usage is:   58,872,424 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  12,716,672 bytes for 1,589,584 cons objects.
+  12,309,328 bytes for    19,790 code objects.
+   9,284,376 bytes for   142,401 simple-vector objects.
+   9,182,728 bytes for   205,828 instance objects.
+   4,693,896 bytes for    74,032 simple-array-unsigned-byte-32 objects.
+   3,201,240 bytes for    39,309 simple-character-string objects.
+   7,713,448 bytes for   361,151 other objects.
+  59,101,688 bytes for 2,432,095 dynamic objects (space total.)
+Dynamic space usage is:   59,949,496 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  13,521,864 bytes for 1,690,233 cons objects.
+  12,309,328 bytes for    19,790 code objects.
+   9,285,304 bytes for   142,404 simple-vector objects.
+   9,188,200 bytes for   205,940 instance objects.
+   4,696,976 bytes for    74,040 simple-array-unsigned-byte-32 objects.
+   3,208,680 bytes for    39,372 simple-character-string objects.
+   7,975,728 bytes for   393,800 other objects.
+  60,186,080 bytes for 2,565,579 dynamic objects (space total.)
+Dynamic space usage is:   61,029,800 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  14,327,056 bytes for 1,790,882 cons objects.
+  12,309,328 bytes for    19,790 code objects.
+   9,286,232 bytes for   142,407 simple-vector objects.
+   9,193,672 bytes for   206,052 instance objects.
+   4,700,056 bytes for    74,048 simple-array-unsigned-byte-32 objects.
+   3,216,120 bytes for    39,435 simple-character-string objects.
+   8,234,792 bytes for   426,047 other objects.
+  61,267,256 bytes for 2,698,661 dynamic objects (space total.)
+Dynamic space usage is:   62,106,872 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  15,132,248 bytes for 1,891,531 cons objects.
+  12,309,328 bytes for    19,790 code objects.
+   9,287,160 bytes for   142,410 simple-vector objects.
+   9,199,144 bytes for   206,164 instance objects.
+   4,703,136 bytes for    74,056 simple-array-unsigned-byte-32 objects.
+   3,223,560 bytes for    39,498 simple-character-string objects.
+   8,497,072 bytes for   458,696 other objects.
+  62,351,648 bytes for 2,832,145 dynamic objects (space total.)
+Dynamic space usage is:   44,013,888 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  11,985,976 bytes for    18,853 code objects.
+  10,650,400 bytes for 1,331,300 cons objects.
+   6,032,152 bytes for   112,405 simple-vector objects.
+   5,817,224 bytes for   128,481 instance objects.
+   2,512,328 bytes for    47,291 simple-array-unsigned-byte-32 objects.
+   7,150,888 bytes for   204,918 other objects.
+  44,148,968 bytes for 1,843,248 dynamic objects (space total.)
+Dynamic space usage is:   45,119,640 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  11,985,976 bytes for    18,853 code objects.
+  11,455,400 bytes for 1,431,925 cons objects.
+   6,033,080 bytes for   112,408 simple-vector objects.
+   5,822,160 bytes for   128,582 instance objects.
+   2,515,408 bytes for    47,299 simple-array-unsigned-byte-32 objects.
+   7,446,760 bytes for   240,992 other objects.
+  45,258,784 bytes for 1,980,059 dynamic objects (space total.)
+Dynamic space usage is:   46,221,232 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  12,260,400 bytes for 1,532,550 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,034,008 bytes for   112,411 simple-vector objects.
+   5,827,096 bytes for   128,683 instance objects.
+   2,518,488 bytes for    47,307 simple-array-unsigned-byte-32 objects.
+   7,742,056 bytes for   276,994 other objects.
+  46,368,024 bytes for 2,116,798 dynamic objects (space total.)
+Dynamic space usage is:   47,326,248 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  13,065,400 bytes for 1,633,175 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,034,936 bytes for   112,414 simple-vector objects.
+   5,832,032 bytes for   128,784 instance objects.
+   2,521,568 bytes for    47,315 simple-array-unsigned-byte-32 objects.
+   8,033,680 bytes for   312,537 other objects.
+  47,473,592 bytes for 2,253,078 dynamic objects (space total.)
+Dynamic space usage is:   48,431,976 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  13,870,400 bytes for 1,733,800 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,035,864 bytes for   112,417 simple-vector objects.
+   5,836,968 bytes for   128,885 instance objects.
+   2,524,648 bytes for    47,323 simple-array-unsigned-byte-32 objects.
+   8,329,552 bytes for   348,611 other objects.
+  48,583,408 bytes for 2,389,889 dynamic objects (space total.)
+Dynamic space usage is:   49,533,568 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  14,675,400 bytes for 1,834,425 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,036,792 bytes for   112,420 simple-vector objects.
+   5,841,904 bytes for   128,986 instance objects.
+   2,527,728 bytes for    47,331 simple-array-unsigned-byte-32 objects.
+   8,624,848 bytes for   384,613 other objects.
+  49,692,648 bytes for 2,526,628 dynamic objects (space total.)
+Dynamic space usage is:   50,638,584 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  15,480,400 bytes for 1,935,050 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,037,720 bytes for   112,423 simple-vector objects.
+   5,846,840 bytes for   129,087 instance objects.
+  11,451,376 bytes for   468,007 other objects.
+  50,802,312 bytes for 2,663,420 dynamic objects (space total.)
+Dynamic space usage is:   51,740,216 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  16,285,208 bytes for 2,035,651 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,038,648 bytes for   112,426 simple-vector objects.
+   5,851,240 bytes for   129,177 instance objects.
+  11,746,416 bytes for   503,692 other objects.
+  51,907,488 bytes for 2,799,799 dynamic objects (space total.)
+Dynamic space usage is:   52,845,272 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  17,090,016 bytes for 2,136,252 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,039,576 bytes for   112,429 simple-vector objects.
+   5,855,640 bytes for   129,267 instance objects.
+  12,041,880 bytes for   539,430 other objects.
+  53,013,088 bytes for 2,936,231 dynamic objects (space total.)
+Dynamic space usage is:   53,946,888 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  17,894,824 bytes for 2,236,853 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,040,504 bytes for   112,432 simple-vector objects.
+   5,860,040 bytes for   129,357 instance objects.
+  12,341,544 bytes for   575,693 other objects.
+  54,122,888 bytes for 3,073,188 dynamic objects (space total.)
+Dynamic space usage is:   55,048,256 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  18,699,632 bytes for 2,337,454 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,041,432 bytes for   112,435 simple-vector objects.
+   5,864,440 bytes for   129,447 instance objects.
+   2,988,912 bytes for   373,614 sap objects.
+   9,648,040 bytes for   237,810 other objects.
+  55,228,432 bytes for 3,209,613 dynamic objects (space total.)
+Dynamic space usage is:   56,154,000 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  19,504,632 bytes for 2,438,079 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,042,360 bytes for   112,438 simple-vector objects.
+   5,869,376 bytes for   129,548 instance objects.
+   3,276,368 bytes for   409,546 sap objects.
+   9,659,608 bytes for   237,971 other objects.
+  56,338,320 bytes for 3,346,435 dynamic objects (space total.)
+Dynamic space usage is:   57,255,680 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  20,309,632 bytes for 2,538,704 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,043,288 bytes for   112,441 simple-vector objects.
+   5,874,312 bytes for   129,649 instance objects.
+   3,559,968 bytes for   444,996 sap objects.
+   9,671,176 bytes for   238,132 other objects.
+  57,444,352 bytes for 3,482,775 dynamic objects (space total.)
+Dynamic space usage is:   58,361,736 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  21,114,632 bytes for 2,639,329 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,044,216 bytes for   112,444 simple-vector objects.
+   5,879,248 bytes for   129,750 instance objects.
+   3,847,280 bytes for   480,910 sap objects.
+   9,682,744 bytes for   238,293 other objects.
+  58,554,096 bytes for 3,619,579 dynamic objects (space total.)
+Dynamic space usage is:   59,463,096 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  21,919,632 bytes for 2,739,954 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,045,144 bytes for   112,447 simple-vector objects.
+   5,884,184 bytes for   129,851 instance objects.
+   4,133,968 bytes for   516,746 sap objects.
+   9,694,312 bytes for   238,454 other objects.
+  59,663,216 bytes for 3,756,305 dynamic objects (space total.)
+Dynamic space usage is:   60,568,344 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  22,724,632 bytes for 2,840,579 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,046,072 bytes for   112,450 simple-vector objects.
+   5,889,120 bytes for   129,952 instance objects.
+   4,420,760 bytes for   552,595 sap objects.
+   9,705,880 bytes for   238,615 other objects.
+  60,772,440 bytes for 3,893,044 dynamic objects (space total.)
+Dynamic space usage is:   61,673,304 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  23,529,632 bytes for 2,941,204 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,047,000 bytes for   112,453 simple-vector objects.
+   5,894,056 bytes for   130,053 instance objects.
+   4,703,880 bytes for   587,985 sap objects.
+   9,717,448 bytes for   238,776 other objects.
+  61,877,992 bytes for 4,029,324 dynamic objects (space total.)
+Dynamic space usage is:   62,779,040 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  24,334,632 bytes for 3,041,829 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,047,928 bytes for   112,456 simple-vector objects.
+   5,898,992 bytes for   130,154 instance objects.
+   4,991,248 bytes for   623,906 sap objects.
+   9,729,016 bytes for   238,937 other objects.
+  62,987,792 bytes for 4,166,135 dynamic objects (space total.)
+Dynamic space usage is:   63,880,632 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  25,139,632 bytes for 3,142,454 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,048,856 bytes for   112,459 simple-vector objects.
+   5,903,928 bytes for   130,255 instance objects.
+   5,278,040 bytes for   659,755 sap objects.
+   9,740,584 bytes for   239,098 other objects.
+  64,097,016 bytes for 4,302,874 dynamic objects (space total.)
+Dynamic space usage is:   64,985,592 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  25,944,632 bytes for 3,243,079 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,049,784 bytes for   112,462 simple-vector objects.
+   5,908,864 bytes for   130,356 instance objects.
+   5,561,160 bytes for   695,145 sap objects.
+   9,752,152 bytes for   239,259 other objects.
+  65,202,568 bytes for 4,439,154 dynamic objects (space total.)
+Dynamic space usage is:   66,091,328 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  26,749,632 bytes for 3,343,704 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,050,712 bytes for   112,465 simple-vector objects.
+   5,913,800 bytes for   130,457 instance objects.
+   5,848,528 bytes for   731,066 sap objects.
+   9,763,720 bytes for   239,420 other objects.
+  66,312,368 bytes for 4,575,965 dynamic objects (space total.)
+Dynamic space usage is:   67,192,920 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  27,554,632 bytes for 3,444,329 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,135,320 bytes for   766,915 sap objects.
+   6,051,640 bytes for   112,468 simple-vector objects.
+   5,918,736 bytes for   130,558 instance objects.
+   9,775,288 bytes for   239,581 other objects.
+  67,421,592 bytes for 4,712,704 dynamic objects (space total.)
+Dynamic space usage is:   68,297,880 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  28,359,632 bytes for 3,544,954 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,422,536 bytes for   802,817 sap objects.
+   6,052,568 bytes for   112,471 simple-vector objects.
+   5,923,672 bytes for   130,659 instance objects.
+   9,786,856 bytes for   239,742 other objects.
+  68,531,240 bytes for 4,849,496 dynamic objects (space total.)
+Dynamic space usage is:   69,403,608 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  29,164,632 bytes for 3,645,579 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,705,808 bytes for   838,226 sap objects.
+   6,053,496 bytes for   112,474 simple-vector objects.
+   5,928,608 bytes for   130,760 instance objects.
+   9,798,424 bytes for   239,903 other objects.
+  69,636,944 bytes for 4,985,795 dynamic objects (space total.)
+Dynamic space usage is:   63,208,224 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  29,846,736 bytes for 3,730,842 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,032,008 bytes for   112,404 simple-vector objects.
+   5,816,488 bytes for   128,467 instance objects.
+   9,661,544 bytes for   252,025 other objects.
+  63,342,752 bytes for 4,242,591 dynamic objects (space total.)
+Dynamic space usage is:   64,411,704 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  30,651,544 bytes for 3,831,443 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,032,936 bytes for   112,407 simple-vector objects.
+   5,820,888 bytes for   128,557 instance objects.
+  10,063,136 bytes for   301,031 other objects.
+  64,554,480 bytes for 4,392,291 dynamic objects (space total.)
+Dynamic space usage is:   65,619,408 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  31,456,352 bytes for 3,932,044 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,033,864 bytes for   112,410 simple-vector objects.
+   5,825,288 bytes for   128,647 instance objects.
+  10,461,288 bytes for   349,605 other objects.
+  65,762,768 bytes for 4,541,559 dynamic objects (space total.)
+Dynamic space usage is:   66,823,360 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  32,261,160 bytes for 4,032,645 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,034,792 bytes for   112,413 simple-vector objects.
+   5,829,688 bytes for   128,737 instance objects.
+  10,859,176 bytes for   398,146 other objects.
+  66,970,792 bytes for 4,690,794 dynamic objects (space total.)
+Dynamic space usage is:   68,027,000 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  33,065,968 bytes for 4,133,246 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,035,720 bytes for   112,416 simple-vector objects.
+   5,834,088 bytes for   128,827 instance objects.
+  11,260,848 bytes for   447,160 other objects.
+  68,182,600 bytes for 4,840,502 dynamic objects (space total.)
+Dynamic space usage is:   69,231,152 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  33,870,776 bytes for 4,233,847 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,036,648 bytes for   112,419 simple-vector objects.
+   5,838,488 bytes for   128,917 instance objects.
+  11,658,344 bytes for   495,652 other objects.
+  69,390,232 bytes for 4,989,688 dynamic objects (space total.)
+Dynamic space usage is:   70,434,608 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  34,675,584 bytes for 4,334,448 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,037,576 bytes for   112,422 simple-vector objects.
+   5,842,888 bytes for   129,007 instance objects.
+  12,055,856 bytes for   544,146 other objects.
+  70,597,880 bytes for 5,138,876 dynamic objects (space total.)
+Dynamic space usage is:   71,642,328 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  35,480,392 bytes for 4,435,049 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,038,504 bytes for   112,425 simple-vector objects.
+   5,847,288 bytes for   129,097 instance objects.
+  12,458,104 bytes for   593,232 other objects.
+  71,810,264 bytes for 5,288,656 dynamic objects (space total.)
+Dynamic space usage is:   72,846,280 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  36,285,200 bytes for 4,535,650 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,039,432 bytes for   112,428 simple-vector objects.
+   5,851,688 bytes for   129,187 instance objects.
+  12,855,992 bytes for   641,773 other objects.
+  73,018,288 bytes for 5,437,891 dynamic objects (space total.)
+Dynamic space usage is:   74,049,920 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  37,090,008 bytes for 4,636,251 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,040,360 bytes for   112,431 simple-vector objects.
+   5,856,088 bytes for   129,277 instance objects.
+  13,253,568 bytes for   690,275 other objects.
+  74,226,000 bytes for 5,587,087 dynamic objects (space total.)
+Dynamic space usage is:   75,254,072 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  37,894,816 bytes for 4,736,852 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,041,288 bytes for   112,434 simple-vector objects.
+   5,860,488 bytes for   129,367 instance objects.
+   4,012,440 bytes for   501,555 sap objects.
+   9,642,720 bytes for   237,724 other objects.
+  75,437,728 bytes for 5,736,785 dynamic objects (space total.)
+Dynamic space usage is:   76,461,648 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  38,699,816 bytes for 4,837,477 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,042,216 bytes for   112,437 simple-vector objects.
+   5,865,424 bytes for   129,468 instance objects.
+   4,398,240 bytes for   549,780 sap objects.
+   9,654,288 bytes for   237,885 other objects.
+  76,645,960 bytes for 5,885,900 dynamic objects (space total.)
+Dynamic space usage is:   77,665,704 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  39,504,816 bytes for 4,938,102 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,043,144 bytes for   112,440 simple-vector objects.
+   5,870,360 bytes for   129,569 instance objects.
+   4,788,056 bytes for   598,507 sap objects.
+   9,665,856 bytes for   238,046 other objects.
+  77,858,208 bytes for 6,035,517 dynamic objects (space total.)
+Dynamic space usage is:   78,873,936 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  40,309,816 bytes for 5,038,727 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,044,072 bytes for   112,443 simple-vector objects.
+   5,875,296 bytes for   129,670 instance objects.
+   5,177,952 bytes for   647,244 sap objects.
+   9,677,424 bytes for   238,207 other objects.
+  79,070,536 bytes for 6,185,144 dynamic objects (space total.)
+Dynamic space usage is:   80,077,992 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  41,114,816 bytes for 5,139,352 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,045,000 bytes for   112,446 simple-vector objects.
+   5,880,232 bytes for   129,771 instance objects.
+   5,563,672 bytes for   695,459 sap objects.
+   9,688,992 bytes for   238,368 other objects.
+  80,278,688 bytes for 6,334,249 dynamic objects (space total.)
+Dynamic space usage is:   81,286,224 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  41,919,816 bytes for 5,239,977 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,045,928 bytes for   112,449 simple-vector objects.
+   5,953,568 bytes for   744,196 sap objects.
+   5,885,168 bytes for   129,872 instance objects.
+   9,700,560 bytes for   238,529 other objects.
+  81,491,016 bytes for 6,483,876 dynamic objects (space total.)
+Dynamic space usage is:   82,490,280 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  42,724,816 bytes for 5,340,602 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,343,384 bytes for   792,923 sap objects.
+   6,046,856 bytes for   112,452 simple-vector objects.
+   5,890,104 bytes for   129,973 instance objects.
+   9,712,128 bytes for   238,690 other objects.
+  82,703,264 bytes for 6,633,493 dynamic objects (space total.)
+Dynamic space usage is:   83,698,512 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  43,529,816 bytes for 5,441,227 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,729,184 bytes for   841,148 sap objects.
+   6,047,784 bytes for   112,455 simple-vector objects.
+   5,895,040 bytes for   130,074 instance objects.
+   9,723,696 bytes for   238,851 other objects.
+  83,911,496 bytes for 6,782,608 dynamic objects (space total.)
+Dynamic space usage is:   84,902,568 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  44,334,816 bytes for 5,541,852 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   7,119,000 bytes for   889,875 sap objects.
+   6,048,712 bytes for   112,458 simple-vector objects.
+   5,899,976 bytes for   130,175 instance objects.
+   9,735,264 bytes for   239,012 other objects.
+  85,123,744 bytes for 6,932,225 dynamic objects (space total.)
+Dynamic space usage is:   86,110,800 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  45,139,816 bytes for 5,642,477 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   7,508,896 bytes for   938,612 sap objects.
+   6,049,640 bytes for   112,461 simple-vector objects.
+   5,904,912 bytes for   130,276 instance objects.
+   9,746,832 bytes for   239,173 other objects.
+  86,336,072 bytes for 7,081,852 dynamic objects (space total.)
+Dynamic space usage is:   87,314,856 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  45,944,816 bytes for 5,743,102 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   7,898,712 bytes for   987,339 sap objects.
+   6,050,568 bytes for   112,464 simple-vector objects.
+   5,909,848 bytes for   130,377 instance objects.
+   9,758,400 bytes for   239,334 other objects.
+  87,548,320 bytes for 7,231,469 dynamic objects (space total.)
+Dynamic space usage is:   88,523,088 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  46,749,816 bytes for 5,843,727 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,284,512 bytes for 1,035,564 sap objects.
+   6,051,496 bytes for   112,467 simple-vector objects.
+   5,914,784 bytes for   130,478 instance objects.
+   9,769,968 bytes for   239,495 other objects.
+  88,756,552 bytes for 7,380,584 dynamic objects (space total.)
+Dynamic space usage is:   89,727,152 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  47,554,816 bytes for 5,944,352 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,674,328 bytes for 1,084,291 sap objects.
+   6,052,424 bytes for   112,470 simple-vector objects.
+   5,919,720 bytes for   130,579 instance objects.
+   9,781,544 bytes for   239,656 other objects.
+  89,968,808 bytes for 7,530,201 dynamic objects (space total.)
+Dynamic space usage is:   81,642,128 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  48,265,568 bytes for 6,033,196 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,032,936 bytes for   112,407 simple-vector objects.
+   5,820,424 bytes for   128,548 instance objects.
+   9,676,376 bytes for   252,841 other objects.
+  81,781,280 bytes for 6,545,845 dynamic objects (space total.)
+Dynamic space usage is:   82,887,000 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  49,070,376 bytes for 6,133,797 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,033,864 bytes for   112,410 simple-vector objects.
+   5,824,824 bytes for   128,638 instance objects.
+  10,111,088 bytes for   305,987 other objects.
+  83,026,128 bytes for 6,699,685 dynamic objects (space total.)
+Dynamic space usage is:   84,127,720 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  49,875,184 bytes for 6,234,398 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,034,792 bytes for   112,413 simple-vector objects.
+   5,829,224 bytes for   128,728 instance objects.
+  10,549,336 bytes for   359,573 other objects.
+  84,274,512 bytes for 6,853,965 dynamic objects (space total.)
+Dynamic space usage is:   85,371,880 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  50,679,992 bytes for 6,334,999 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,035,720 bytes for   112,416 simple-vector objects.
+   5,833,624 bytes for   128,818 instance objects.
+  10,988,008 bytes for   413,212 other objects.
+  85,523,320 bytes for 7,008,298 dynamic objects (space total.)
+Dynamic space usage is:   86,616,752 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  51,484,800 bytes for 6,435,600 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,036,648 bytes for   112,419 simple-vector objects.
+   5,838,024 bytes for   128,908 instance objects.
+  11,426,832 bytes for   466,870 other objects.
+  86,772,280 bytes for 7,162,650 dynamic objects (space total.)
+Dynamic space usage is:   87,857,488 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  52,289,608 bytes for 6,536,201 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,037,576 bytes for   112,422 simple-vector objects.
+   5,842,424 bytes for   128,998 instance objects.
+  11,865,080 bytes for   520,456 other objects.
+  88,020,664 bytes for 7,316,930 dynamic objects (space total.)
+Dynamic space usage is:   89,101,648 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  53,094,416 bytes for 6,636,802 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,038,504 bytes for   112,425 simple-vector objects.
+   5,846,824 bytes for   129,088 instance objects.
+  12,303,752 bytes for   574,095 other objects.
+  89,269,472 bytes for 7,471,263 dynamic objects (space total.)
+Dynamic space usage is:   90,346,520 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  53,899,224 bytes for 6,737,403 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,039,432 bytes for   112,428 simple-vector objects.
+   5,851,224 bytes for   129,178 instance objects.
+  12,742,576 bytes for   627,753 other objects.
+  90,518,432 bytes for 7,625,615 dynamic objects (space total.)
+Dynamic space usage is:   91,587,256 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  54,704,032 bytes for 6,838,004 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,040,360 bytes for   112,431 simple-vector objects.
+   5,855,624 bytes for   129,268 instance objects.
+  13,180,824 bytes for   681,339 other objects.
+  91,766,816 bytes for 7,779,895 dynamic objects (space total.)
+Dynamic space usage is:   92,831,416 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  55,508,840 bytes for 6,938,605 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,041,288 bytes for   112,434 simple-vector objects.
+   5,860,024 bytes for   129,358 instance objects.
+  13,615,400 bytes for   734,466 other objects.
+  93,011,528 bytes for 7,933,716 dynamic objects (space total.)
+Dynamic space usage is:   94,076,288 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  56,313,648 bytes for 7,039,206 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,042,216 bytes for   112,437 simple-vector objects.
+   5,864,424 bytes for   129,448 instance objects.
+  14,054,224 bytes for   788,124 other objects.
+  94,260,488 bytes for 8,088,068 dynamic objects (space total.)
+Dynamic space usage is:   95,317,024 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  57,118,456 bytes for 7,139,807 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,043,144 bytes for   112,440 simple-vector objects.
+   5,868,824 bytes for   129,538 instance objects.
+   4,829,736 bytes for   603,717 sap objects.
+   9,662,736 bytes for   237,993 other objects.
+  95,508,872 bytes for 8,242,348 dynamic objects (space total.)
+Dynamic space usage is:   96,561,184 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  57,923,456 bytes for 7,240,432 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,044,072 bytes for   112,443 simple-vector objects.
+   5,873,760 bytes for   129,639 instance objects.
+   5,256,216 bytes for   657,027 sap objects.
+   9,674,304 bytes for   238,154 other objects.
+  96,757,784 bytes for 8,396,548 dynamic objects (space total.)
+Dynamic space usage is:   97,806,000 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  58,728,456 bytes for 7,341,057 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,045,000 bytes for   112,446 simple-vector objects.
+   5,878,696 bytes for   129,740 instance objects.
+   5,686,792 bytes for   710,849 sap objects.
+   9,685,872 bytes for   238,315 other objects.
+  98,010,792 bytes for 8,551,260 dynamic objects (space total.)
+Dynamic space usage is:   99,050,816 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  59,533,456 bytes for 7,441,682 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,113,272 bytes for   764,159 sap objects.
+   6,045,928 bytes for   112,449 simple-vector objects.
+   5,883,632 bytes for   129,841 instance objects.
+   9,697,440 bytes for   238,476 other objects.
+  99,259,704 bytes for 8,705,460 dynamic objects (space total.)
+Dynamic space usage is:   100,295,632 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  60,338,456 bytes for 7,542,307 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,539,752 bytes for   817,469 sap objects.
+   6,046,856 bytes for   112,452 simple-vector objects.
+   5,888,568 bytes for   129,942 instance objects.
+   9,709,008 bytes for   238,637 other objects.
+  100,508,616 bytes for 8,859,660 dynamic objects (space total.)
+Dynamic space usage is:   101,540,448 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  61,143,456 bytes for 7,642,932 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,966,232 bytes for   870,779 sap objects.
+   6,047,784 bytes for   112,455 simple-vector objects.
+   5,893,504 bytes for   130,043 instance objects.
+   9,720,576 bytes for   238,798 other objects.
+  101,757,528 bytes for 9,013,860 dynamic objects (space total.)
+Dynamic space usage is:   102,785,264 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  61,948,456 bytes for 7,743,557 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   7,392,712 bytes for   924,089 sap objects.
+   6,048,712 bytes for   112,458 simple-vector objects.
+   5,898,440 bytes for   130,144 instance objects.
+   9,732,144 bytes for   238,959 other objects.
+  103,006,440 bytes for 9,168,060 dynamic objects (space total.)
+Dynamic space usage is:   104,030,080 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  62,753,456 bytes for 7,844,182 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   7,823,288 bytes for   977,911 sap objects.
+   6,049,640 bytes for   112,461 simple-vector objects.
+   5,903,376 bytes for   130,245 instance objects.
+   9,743,712 bytes for   239,120 other objects.
+  104,259,448 bytes for 9,322,772 dynamic objects (space total.)
+Dynamic space usage is:   105,274,896 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  63,558,456 bytes for 7,944,807 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,249,768 bytes for 1,031,221 sap objects.
+   6,050,568 bytes for   112,464 simple-vector objects.
+   5,908,312 bytes for   130,346 instance objects.
+   9,755,280 bytes for   239,281 other objects.
+  105,508,360 bytes for 9,476,972 dynamic objects (space total.)
+Dynamic space usage is:   106,519,720 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  64,363,456 bytes for 8,045,432 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,676,248 bytes for 1,084,531 sap objects.
+   6,051,496 bytes for   112,467 simple-vector objects.
+   5,913,248 bytes for   130,447 instance objects.
+   9,766,856 bytes for   239,442 other objects.
+  106,757,280 bytes for 9,631,172 dynamic objects (space total.)
+Dynamic space usage is:   98,419,840 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  65,059,000 bytes for 8,132,375 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,032,008 bytes for   112,404 simple-vector objects.
+   5,816,488 bytes for   128,467 instance objects.
+   9,664,616 bytes for   252,409 other objects.
+  98,558,088 bytes for 8,644,508 dynamic objects (space total.)
+Dynamic space usage is:   99,803,248 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  65,863,808 bytes for 8,232,976 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,032,936 bytes for   112,407 simple-vector objects.
+   5,820,888 bytes for   128,557 instance objects.
+  10,238,840 bytes for   322,994 other objects.
+  99,942,448 bytes for 8,815,787 dynamic objects (space total.)
+Dynamic space usage is:   101,183,512 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  66,668,616 bytes for 8,333,577 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,033,864 bytes for   112,410 simple-vector objects.
+   5,825,288 bytes for   128,647 instance objects.
+  10,813,080 bytes for   393,579 other objects.
+  101,326,824 bytes for 8,987,066 dynamic objects (space total.)
+Dynamic space usage is:   102,563,792 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  67,473,424 bytes for 8,434,178 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,034,792 bytes for   112,413 simple-vector objects.
+   5,829,688 bytes for   128,737 instance objects.
+  11,387,320 bytes for   464,164 other objects.
+  102,711,200 bytes for 9,158,345 dynamic objects (space total.)
+Dynamic space usage is:   103,944,072 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  68,278,232 bytes for 8,534,779 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,035,720 bytes for   112,416 simple-vector objects.
+   5,834,088 bytes for   128,827 instance objects.
+  11,965,656 bytes for   535,261 other objects.
+  104,099,672 bytes for 9,330,136 dynamic objects (space total.)
+Dynamic space usage is:   105,324,352 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  69,083,040 bytes for 8,635,380 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,036,648 bytes for   112,419 simple-vector objects.
+   5,838,488 bytes for   128,917 instance objects.
+  12,539,896 bytes for   605,846 other objects.
+  105,484,048 bytes for 9,501,415 dynamic objects (space total.)
+Dynamic space usage is:   106,704,632 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  69,887,848 bytes for 8,735,981 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,037,576 bytes for   112,422 simple-vector objects.
+   5,842,888 bytes for   129,007 instance objects.
+  13,114,136 bytes for   676,431 other objects.
+  106,868,424 bytes for 9,672,694 dynamic objects (space total.)
+Dynamic space usage is:   108,084,912 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  70,692,656 bytes for 8,836,582 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,038,504 bytes for   112,425 simple-vector objects.
+   5,847,288 bytes for   129,097 instance objects.
+  13,692,472 bytes for   747,528 other objects.
+  108,256,896 bytes for 9,844,485 dynamic objects (space total.)
+Dynamic space usage is:   109,465,192 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  71,497,464 bytes for 8,937,183 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,039,432 bytes for   112,428 simple-vector objects.
+   5,851,688 bytes for   129,187 instance objects.
+  14,266,712 bytes for   818,113 other objects.
+  109,641,272 bytes for 10,015,764 dynamic objects (space total.)
+Dynamic space usage is:   110,845,472 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  72,302,272 bytes for 9,037,784 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,040,360 bytes for   112,431 simple-vector objects.
+   5,856,088 bytes for   129,277 instance objects.
+  14,840,968 bytes for   888,698 other objects.
+  111,025,664 bytes for 10,187,043 dynamic objects (space total.)
+Dynamic space usage is:   112,225,768 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  73,107,080 bytes for 9,138,385 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,041,288 bytes for   112,434 simple-vector objects.
+   5,860,488 bytes for   129,367 instance objects.
+   5,776,560 bytes for   722,070 sap objects.
+   9,642,760 bytes for   237,725 other objects.
+  112,414,152 bytes for 10,358,834 dynamic objects (space total.)
+Dynamic space usage is:   113,606,024 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  73,912,080 bytes for 9,239,010 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,342,552 bytes for   792,819 sap objects.
+   6,042,216 bytes for   112,437 simple-vector objects.
+   5,865,424 bytes for   129,468 instance objects.
+   9,654,344 bytes for   237,886 other objects.
+  113,802,592 bytes for 10,530,473 dynamic objects (space total.)
+Dynamic space usage is:   114,985,920 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  74,717,080 bytes for 9,339,635 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,907,664 bytes for   863,458 sap objects.
+   6,043,144 bytes for   112,440 simple-vector objects.
+   5,870,360 bytes for   129,569 instance objects.
+   9,665,928 bytes for   238,047 other objects.
+  115,190,152 bytes for 10,702,002 dynamic objects (space total.)
+Dynamic space usage is:   116,369,736 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  75,522,080 bytes for 9,440,260 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   7,469,560 bytes for   933,695 sap objects.
+   6,044,072 bytes for   112,443 simple-vector objects.
+   5,875,296 bytes for   129,670 instance objects.
+   9,677,512 bytes for   238,208 other objects.
+  116,574,496 bytes for 10,873,129 dynamic objects (space total.)
+Dynamic space usage is:   117,749,632 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  76,327,080 bytes for 9,540,885 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,034,672 bytes for 1,004,334 sap objects.
+   6,045,000 bytes for   112,446 simple-vector objects.
+  15,569,328 bytes for   368,140 other objects.
+  117,962,056 bytes for 11,044,658 dynamic objects (space total.)
+Dynamic space usage is:   119,133,488 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  77,131,888 bytes for 9,641,486 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,602,272 bytes for 1,075,284 sap objects.
+   6,045,928 bytes for   112,449 simple-vector objects.
+  15,584,480 bytes for   368,377 other objects.
+  119,350,544 bytes for 11,216,449 dynamic objects (space total.)
+Dynamic space usage is:   120,513,784 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  77,936,696 bytes for 9,742,087 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   9,165,776 bytes for 1,145,722 sap objects.
+   6,046,856 bytes for   112,452 simple-vector objects.
+  15,599,632 bytes for   368,614 other objects.
+  120,734,936 bytes for 11,387,728 dynamic objects (space total.)
+Dynamic space usage is:   121,894,080 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  78,741,504 bytes for 9,842,688 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   9,729,280 bytes for 1,216,160 sap objects.
+  21,662,568 bytes for   481,306 other objects.
+  122,119,328 bytes for 11,559,007 dynamic objects (space total.)
+Dynamic space usage is:   123,270,288 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  79,546,120 bytes for 9,943,265 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  10,293,816 bytes for 1,286,727 sap objects.
+  21,677,256 bytes for   481,521 other objects.
+  123,503,168 bytes for 11,730,366 dynamic objects (space total.)
+Dynamic space usage is:   124,649,976 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  80,350,736 bytes for 10,043,842 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  10,858,776 bytes for 1,357,347 sap objects.
+  21,691,960 bytes for   481,736 other objects.
+  124,887,448 bytes for 11,901,778 dynamic objects (space total.)
+Dynamic space usage is:   114,450,288 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  81,077,352 bytes for 10,134,669 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,032,936 bytes for   112,407 simple-vector objects.
+   5,819,352 bytes for   128,526 instance objects.
+   9,673,288 bytes for   252,633 other objects.
+  114,588,904 bytes for 10,647,088 dynamic objects (space total.)
+Dynamic space usage is:   115,829,928 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  81,882,160 bytes for 10,235,270 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,033,864 bytes for   112,410 simple-vector objects.
+   5,823,752 bytes for   128,616 instance objects.
+  10,250,608 bytes for   323,601 other objects.
+  115,976,360 bytes for 10,818,750 dynamic objects (space total.)
+Dynamic space usage is:   117,213,344 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  82,686,968 bytes for 10,335,871 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,034,792 bytes for   112,413 simple-vector objects.
+  16,653,032 bytes for   522,892 other objects.
+  117,360,768 bytes for 10,990,029 dynamic objects (space total.)
+Dynamic space usage is:   118,589,528 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  83,491,584 bytes for 10,436,448 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,035,720 bytes for   112,416 simple-vector objects.
+  17,231,344 bytes for   593,671 other objects.
+  118,744,624 bytes for 11,161,388 dynamic objects (space total.)
+Dynamic space usage is:   119,969,256 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  84,296,200 bytes for 10,537,025 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,036,648 bytes for   112,419 simple-vector objects.
+  17,810,080 bytes for   664,503 other objects.
+  120,128,904 bytes for 11,332,800 dynamic objects (space total.)
+Dynamic space usage is:   121,349,136 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  85,100,816 bytes for 10,637,602 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  24,426,168 bytes for   847,729 other objects.
+  121,512,960 bytes for 11,504,184 dynamic objects (space total.)
+Dynamic space usage is:   122,725,128 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  85,905,240 bytes for 10,738,155 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  25,005,848 bytes for   918,715 other objects.
+  122,897,064 bytes for 11,675,723 dynamic objects (space total.)
+Dynamic space usage is:   124,100,760 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  86,709,664 bytes for 10,838,708 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  25,581,208 bytes for   989,161 other objects.
+  124,276,848 bytes for 11,846,722 dynamic objects (space total.)
+Dynamic space usage is:   125,481,040 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  87,514,088 bytes for 10,939,261 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  26,161,088 bytes for 1,060,172 other objects.
+  125,661,152 bytes for 12,018,286 dynamic objects (space total.)
+Dynamic space usage is:   126,857,176 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  88,318,512 bytes for 11,039,814 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  26,736,984 bytes for 1,130,684 other objects.
+  127,041,472 bytes for 12,189,351 dynamic objects (space total.)
+Dynamic space usage is:   128,233,120 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  89,122,936 bytes for 11,140,367 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  27,315,768 bytes for 1,201,557 other objects.
+  128,424,680 bytes for 12,360,777 dynamic objects (space total.)
+Dynamic space usage is:   129,612,488 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  89,927,360 bytes for 11,240,920 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  27,895,656 bytes for 1,272,568 other objects.
+  129,808,992 bytes for 12,532,341 dynamic objects (space total.)
+Dynamic space usage is:   130,988,632 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  90,731,784 bytes for 11,341,473 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   6,906,744 bytes for   863,343 sap objects.
+  21,564,808 bytes for   479,737 other objects.
+  131,189,312 bytes for 12,703,406 dynamic objects (space total.)
+Dynamic space usage is:   132,364,592 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  91,536,400 bytes for 11,442,050 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   7,471,176 bytes for   933,897 sap objects.
+  21,579,504 bytes for   479,952 other objects.
+  132,573,056 bytes for 12,874,752 dynamic objects (space total.)
+Dynamic space usage is:   133,744,504 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  92,341,016 bytes for 11,542,627 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,039,808 bytes for 1,004,976 sap objects.
+  21,594,200 bytes for   480,167 other objects.
+  133,961,000 bytes for 13,046,623 dynamic objects (space total.)
+Dynamic space usage is:   135,124,192 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  93,145,632 bytes for 11,643,204 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   8,604,768 bytes for 1,075,596 sap objects.
+  21,608,904 bytes for   480,382 other objects.
+  135,345,280 bytes for 13,218,035 dynamic objects (space total.)
+Dynamic space usage is:   136,504,072 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  93,950,248 bytes for 11,743,781 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   9,169,504 bytes for 1,146,188 sap objects.
+  21,623,608 bytes for   480,597 other objects.
+  136,729,336 bytes for 13,389,419 dynamic objects (space total.)
+Dynamic space usage is:   137,880,136 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  94,754,864 bytes for 11,844,358 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+   9,734,416 bytes for 1,216,802 sap objects.
+  21,638,312 bytes for   480,812 other objects.
+  138,113,568 bytes for 13,560,825 dynamic objects (space total.)
+Dynamic space usage is:   139,260,376 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  95,559,480 bytes for 11,944,935 cons objects.
+  11,985,976 bytes for    18,853 code objects.
+  10,299,376 bytes for 1,287,422 sap objects.
+  21,653,016 bytes for   481,027 other objects.
+  139,497,848 bytes for 13,732,237 dynamic objects (space total.)
+Dynamic space usage is:   128,168,272 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  95,885,344 bytes for 11,985,668 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  20,535,944 bytes for   482,747 other objects.
+  128,405,840 bytes for 12,487,263 dynamic objects (space total.)
+Dynamic space usage is:   129,863,944 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  96,689,768 bytes for 12,086,221 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  21,443,536 bytes for   594,722 other objects.
+  130,117,856 bytes for 12,699,791 dynamic objects (space total.)
+Dynamic space usage is:   131,563,712 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  97,494,192 bytes for 12,186,774 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  22,342,976 bytes for   705,678 other objects.
+  131,821,720 bytes for 12,911,300 dynamic objects (space total.)
+Dynamic space usage is:   133,263,248 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  98,298,616 bytes for 12,287,327 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  23,270,864 bytes for   820,190 other objects.
+  133,554,032 bytes for 13,126,365 dynamic objects (space total.)
+Dynamic space usage is:   134,958,880 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  99,103,040 bytes for 12,387,880 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  24,170,256 bytes for   931,140 other objects.
+  135,257,848 bytes for 13,337,868 dynamic objects (space total.)
+Dynamic space usage is:   136,658,648 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  99,907,464 bytes for 12,488,433 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  25,069,696 bytes for 1,042,096 other objects.
+  136,961,712 bytes for 13,549,377 dynamic objects (space total.)
+Dynamic space usage is:   138,358,184 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  100,711,888 bytes for 12,588,986 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  25,973,016 bytes for 1,153,536 other objects.
+  138,669,456 bytes for 13,761,370 dynamic objects (space total.)
+Dynamic space usage is:   140,053,824 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  101,516,312 bytes for 12,689,539 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  26,872,416 bytes for 1,264,486 other objects.
+  140,373,280 bytes for 13,972,873 dynamic objects (space total.)
+Dynamic space usage is:   141,753,608 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  102,320,736 bytes for 12,790,092 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+   7,360,600 bytes for   920,075 sap objects.
+  20,411,264 bytes for   455,367 other objects.
+  142,077,152 bytes for 14,184,382 dynamic objects (space total.)
+Dynamic space usage is:   143,453,080 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  103,125,352 bytes for 12,890,669 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+   8,248,960 bytes for 1,031,120 sap objects.
+  20,425,960 bytes for   455,582 other objects.
+  143,784,824 bytes for 14,396,219 dynamic objects (space total.)
+Dynamic space usage is:   145,152,800 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  103,929,968 bytes for 12,991,246 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+   9,136,680 bytes for 1,142,085 sap objects.
+  20,440,664 bytes for   455,797 other objects.
+  145,491,864 bytes for 14,607,976 dynamic objects (space total.)
+Dynamic space usage is:   146,851,712 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  104,734,584 bytes for 13,091,823 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  10,024,416 bytes for 1,253,052 sap objects.
+  20,455,368 bytes for   456,012 other objects.
+  147,198,920 bytes for 14,819,735 dynamic objects (space total.)
+Dynamic space usage is:   148,554,408 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  105,539,200 bytes for 13,192,400 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  10,908,712 bytes for 1,363,589 sap objects.
+  20,470,088 bytes for   456,227 other objects.
+  148,902,552 bytes for 15,031,064 dynamic objects (space total.)
+Dynamic space usage is:   150,254,200 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  106,343,816 bytes for 13,292,977 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  11,797,344 bytes for 1,474,668 sap objects.
+  20,484,808 bytes for   456,442 other objects.
+  150,610,520 bytes for 15,242,935 dynamic objects (space total.)
+Dynamic space usage is:   151,953,760 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  107,148,432 bytes for 13,393,554 cons objects.
+  12,685,696 bytes for 1,585,712 sap objects.
+  11,984,552 bytes for    18,848 code objects.
+  20,499,528 bytes for   456,657 other objects.
+  152,318,208 bytes for 15,454,771 dynamic objects (space total.)
+Dynamic space usage is:   153,652,992 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  107,953,048 bytes for 13,494,131 cons objects.
+  13,573,784 bytes for 1,696,723 sap objects.
+  11,984,552 bytes for    18,848 code objects.
+  20,514,248 bytes for   456,872 other objects.
+  154,025,632 bytes for 15,666,574 dynamic objects (space total.)
+Dynamic space usage is:   140,978,824 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  108,697,512 bytes for 13,587,189 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  20,538,416 bytes for   483,056 other objects.
+  141,220,480 bytes for 14,089,093 dynamic objects (space total.)
+Dynamic space usage is:   142,678,600 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  109,501,936 bytes for 13,687,742 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  21,441,960 bytes for   594,525 other objects.
+  142,928,448 bytes for 14,301,115 dynamic objects (space total.)
+Dynamic space usage is:   144,374,312 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  110,306,360 bytes for 13,788,295 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  22,344,592 bytes for   705,880 other objects.
+  144,635,504 bytes for 14,513,023 dynamic objects (space total.)
+Dynamic space usage is:   146,072,744 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  111,110,784 bytes for 13,888,848 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  23,272,280 bytes for   820,367 other objects.
+  146,367,616 bytes for 14,728,063 dynamic objects (space total.)
+Dynamic space usage is:   147,772,512 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  111,915,208 bytes for 13,989,401 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  24,171,720 bytes for   931,323 other objects.
+  148,071,480 bytes for 14,939,572 dynamic objects (space total.)
+Dynamic space usage is:   149,472,048 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Breakdown for dynamic space:
+  112,719,632 bytes for 14,089,954 cons objects.
+  11,984,552 bytes for    18,848 code objects.
+  25,070,936 bytes for 1,042,251 other objects.
+  149,775,120 bytes for 15,151,053 dynamic objects (space total.)
+Dynamic space usage is:   151,167,680 bytes.
+Read-only space usage is:      3,496 bytes.
+Static space usage is:         2,240 bytes.
+Control stack usage is:        1,276 bytes.
+Binding stack usage is:          400 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
