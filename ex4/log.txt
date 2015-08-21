@@ -11,22 +11,5 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmp5ADTY1IC.tmp' &>'/tmp/tmpXLA08HYB.tmp'' returned 1
+--disable-debugger <'/tmp/tmpEYDZ61SQ.tmp' &>'/tmp/tmp8MGBJN76.tmp'' returned 1
 
-
-* 
-(PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
-NIL
-* 
-
-(ql:quickload "cl-ppcre")
-To load "cl-ppcre":
-  Load 1 ASDF system:
-    cl-ppcre
-; Loading "cl-ppcre"
-..
-("cl-ppcre")
-* 
-
-
-(DRIBBLE) 

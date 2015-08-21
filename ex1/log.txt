@@ -11,18 +11,5 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmp19HGUQIS.tmp' &>'/tmp/tmpNV7IFZNS.tmp'' returned 1
+--disable-debugger <'/tmp/tmpINGWFQGR.tmp' &>'/tmp/tmpI8XOJZUN.tmp'' returned 1
 
-
-* 
-(PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
-NIL
-* 
-
-(+ 2 300)
-
-302
-* 
-
-
-(DRIBBLE) 

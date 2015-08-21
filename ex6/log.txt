@@ -11,29 +11,5 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmp41U2SYN6.tmp' &>'/tmp/tmpZJO38N9S.tmp'' returned 1
+--disable-debugger <'/tmp/tmpTL22HQPZ.tmp' &>'/tmp/tmpPO723770.tmp'' returned 1
 
-
-* 
-(PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
-NIL
-* 
-
-(time
-  (let ((sum 0))
-    (dotimes (i 1000000 sum)
-      (incf sum i))))
-Evaluation took:
-  0.059 seconds of real time
-  0.060000 seconds of total run time (0.056000 user, 0.004000 system)
-  [ Run times consist of 0.016 seconds GC time, and 0.044 seconds non-GC time. ]
-  101.69% CPU
-  140,516,430 processor cycles
-  23,214,336 bytes consed
-  
-
-499999500000
-* 
-
-
-(DRIBBLE) 
