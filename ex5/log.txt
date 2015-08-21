@@ -1,0 +1,24 @@
+
+* 
+(PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+* 
+
+(ql:quickload "cl-ppcre")
+To load "cl-ppcre":
+  Load 1 ASDF system:
+    cl-ppcre
+; Loading "cl-ppcre"
+..
+("cl-ppcre")
+* 
+(ppcre:scan "foo" "hallo foo")
+
+6
+9
+#()
+#()
+* 
+
+
+(DRIBBLE) 
