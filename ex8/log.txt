@@ -1,3 +1,18 @@
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/ex8/'
+'-ti'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmpI9AXLRQN.tmp' &>'/tmp/tmpZF4X07W8.tmp'' returned 1
+
 process $ /bin/bash '-c'
 'sbcl32
 --noinform --disable-ldb --end-runtime-options --disable-debugger
@@ -117,3 +132,4 @@ Garbage collection is currently enabled.
 
 Dynamic space usage is:   230,600,512 bytes.
 Read-
+

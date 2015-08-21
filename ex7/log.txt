@@ -1,3 +1,18 @@
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/ex7/'
+'-ti'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmpTONDV3YY.tmp' &>'/tmp/tmpGMDY266S.tmp'' returned 1
+
 process $ /bin/bash '-c'
 'sbcl32
 --noinform --disable-ldb --end-runtime-options --disable-debugger
@@ -31,4 +46,5 @@ Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {AF48909}>
 11: ((LABELS SB-IMPL::RESTART-LISP :IN SAVE-LISP-AND-DIE))
 
 unhandled condition in --disable-debugger mode, quitting
+
 
