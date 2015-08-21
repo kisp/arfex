@@ -1,15 +1,19 @@
-process $ /usr/bin/docker 'run'
-'-v'
-'/root/arfex:/root/arfex'
-'-v'
-'/tmp:/tmp'
-'-w'
-'/root/arfex/ex1/'
-'-ti'
-'--rm'
-'kisp/arfe'
-'/bin/bash'
-'-c'
-'arfe
---disable-debugger <'/tmp/tmpINGWFQGR.tmp' &>'/tmp/tmpI8XOJZUN.tmp'' returned 1
 
+ARFE(2): 
+
+ARFE(2): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+ARFE(3): 
+
+ARFE(3): 
+
+ARFE(3): (+ 2 300)
+
+302
+ARFE(4): 
+
+ARFE(4): 
+
+ARFE(4): 
+
+ARFE(4): (DRIBBLE) 

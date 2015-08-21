@@ -5,11 +5,43 @@ process $ /usr/bin/docker 'run'
 '/tmp:/tmp'
 '-w'
 '/root/arfex/ex7/'
-'-ti'
 '--rm'
 'kisp/arfe'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmp6R81FEHC.tmp' &>'/tmp/tmpZSG6NLZB.tmp'' returned 1
+--disable-debugger <'/tmp/tmpPYCJEVS9.tmp' &>'/tmp/tmpNTDAWR8E.tmp'' returned 1
+
+
+ARFE(2): 
+
+ARFE(2): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+ARFE(3): 
+
+ARFE(3): 
+
+ARFE(3): (/ 10 0)
+Unhandled DIVISION-BY-ZERO in thread #<SB-THREAD:THREAD "main thread" RUNNING
+                                        {10048CDEC3}>:
+  arithmetic error DIVISION-BY-ZERO signalled
+Operation was /, operands (10 0).
+
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048CDEC3}>
+0: (SB-KERNEL::INTEGER-/-INTEGER 10 0)
+1: (/ 10 0)
+2: (SB-INT:SIMPLE-EVAL-IN-LEXENV (/ 10 0) #<NULL-LEXENV>)
+3: (EVAL (/ 10 0))
+4: (SB-EXT:INTERACTIVE-EVAL (/ 10 0) :EVAL NIL)
+5: (SB-ACLREPL::REP-ONE)
+6: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
+7: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
+8: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
+9: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {100580500B}>)
+10: (SB-IMPL::TOPLEVEL-REPL NIL)
+11: (SB-IMPL::TOPLEVEL-INIT)
+12: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
+13: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
+
+unhandled condition in --disable-debugger mode, quitting
 

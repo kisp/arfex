@@ -1,15 +1,31 @@
-process $ /usr/bin/docker 'run'
-'-v'
-'/root/arfex:/root/arfex'
-'-v'
-'/tmp:/tmp'
-'-w'
-'/root/arfex/ex5/'
-'-ti'
-'--rm'
-'kisp/arfe'
-'/bin/bash'
-'-c'
-'arfe
---disable-debugger <'/tmp/tmpFRR3PO3W.tmp' &>'/tmp/tmpOP5VLUO2.tmp'' returned 1
 
+ARFE(2): 
+
+ARFE(2): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+ARFE(3): 
+
+ARFE(3): 
+
+ARFE(3): (ql:quickload "cl-ppcre")
+To load "cl-ppcre":
+  Load 1 ASDF system:
+    cl-ppcre
+; Loading "cl-ppcre"
+
+("cl-ppcre")
+ARFE(4): 
+
+ARFE(4): (ppcre:scan "foo" "hallo foo")
+
+6
+9
+#()
+#()
+ARFE(5): 
+
+ARFE(5): 
+
+ARFE(5): 
+
+ARFE(5): (DRIBBLE) 

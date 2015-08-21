@@ -1,15 +1,29 @@
-process $ /usr/bin/docker 'run'
-'-v'
-'/root/arfex:/root/arfex'
-'-v'
-'/tmp:/tmp'
-'-w'
-'/root/arfex/ex6/'
-'-ti'
-'--rm'
-'kisp/arfe'
-'/bin/bash'
-'-c'
-'arfe
---disable-debugger <'/tmp/tmpTL22HQPZ.tmp' &>'/tmp/tmpPO723770.tmp'' returned 1
 
+ARFE(2): 
+
+ARFE(2): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+ARFE(3): 
+
+ARFE(3): 
+
+ARFE(3): (time
+  (let ((sum 0))
+    (dotimes (i 1000000 sum)
+      (incf sum i))))
+Evaluation took:
+  0.008 seconds of real time
+  0.008000 seconds of total run time (0.008000 user, 0.000000 system)
+  100.00% CPU
+  18,602,280 processor cycles
+  0 bytes consed
+  
+
+499999500000
+ARFE(4): 
+
+ARFE(4): 
+
+ARFE(4): 
+
+ARFE(4): (DRIBBLE) 
