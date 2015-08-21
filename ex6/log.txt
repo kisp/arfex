@@ -12,10 +12,10 @@ ARFE(4): (time
     (dotimes (i 1000000 sum)
       (incf sum i))))
 Evaluation took:
-  0.003 seconds of real time
+  0.004 seconds of real time
   0.004000 seconds of total run time (0.004000 user, 0.000000 system)
-  133.33% CPU
-  8,499,792 processor cycles
+  100.00% CPU
+  8,473,563 processor cycles
   0 bytes consed
   
 
