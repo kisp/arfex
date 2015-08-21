@@ -1,0 +1,13 @@
+
+* 
+(PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+* 
+
+(random 100)
+
+92
+* 
+
+
+(DRIBBLE) 
