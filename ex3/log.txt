@@ -1,0 +1,13 @@
+
+* 
+(PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+* 
+
+(get-universal-time)
+
+3649135199
+* 
+
+
+(DRIBBLE) 
