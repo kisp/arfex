@@ -1,7 +1,7 @@
 process $ /bin/bash '-c'
 'sbcl32
 --noinform --disable-ldb --end-runtime-options --disable-debugger
---end-toplevel-options <'/tmp/tmpD44J8ZE7.tmp' &>'/tmp/tmp9PV4IHAW.tmp''
+--end-toplevel-options <'/tmp/tmp61QND6X9.tmp' &>'/tmp/tmpIC2OJ5AS.tmp''
 returned 1
 
 
