@@ -9,11 +9,11 @@ NIL
     (dotimes (i 1000000 sum)
       (incf sum i))))
 Evaluation took:
-  0.065 seconds of real time
+  0.064 seconds of real time
   0.064000 seconds of total run time (0.064000 user, 0.000000 system)
   [ Run times consist of 0.020 seconds GC time, and 0.044 seconds non-GC time. ]
-  98.46% CPU
-  155,678,430 processor cycles
+  100.00% CPU
+  154,588,311 processor cycles
   23,214,336 bytes consed
   
 
