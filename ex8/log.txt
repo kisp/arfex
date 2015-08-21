@@ -1,3 +1,5 @@
+process /bin/bash -c sbcl32 --noinform --disable-ldb --end-runtime-options --disable-debugger --end-toplevel-options <'/tmp/tmpANOWE495.tmp' &>'/tmp/tmpMJCK845K.tmp' returned 137
+
 
 * 
 (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 

@@ -1,3 +1,5 @@
+process /bin/bash -c sbcl32 --noinform --disable-ldb --end-runtime-options --disable-debugger --end-toplevel-options <'/tmp/tmpY08KX6ZY.tmp' &>'/tmp/tmpCPQCUTF9.tmp' returned 1
+
 
 * 
 (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
@@ -25,3 +27,4 @@ Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {AF48909}>
 11: ((LABELS SB-IMPL::RESTART-LISP :IN SAVE-LISP-AND-DIE))
 
 unhandled condition in --disable-debugger mode, quitting
+
