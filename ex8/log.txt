@@ -10,7 +10,7 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmpUOCSYEYQ.tmp' &>'/tmp/tmpNW5NV5N9.tmp'' returned
+--disable-debugger <'/tmp/tmpHIU99HX9.tmp' &>'/tmp/tmpUCJ0Y7I4.tmp'' returned
 137
 
 
@@ -24,4 +24,109 @@ ARFE(3):
 
 ARFE(3): 
 
-ARFE(3): 
+ARFE(3): (let (list)
+  (loop
+    (room nil)
+    (terpri)
+    (loop repeat 1000000
+          do (push 3 list)))
+  (length list))
+
+Dynamic space usage is:   92,521,456 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   108,544,976 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   124,535,760 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   128,187,296 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   144,178,080 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   160,201,632 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   176,277,600 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   192,301,152 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   208,291,936 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   224,282,720 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   240,300,960 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   256,324,480 bytes.
+Read-only space usage is:      5,824 bytes.
+Static space usage is:         3,168 bytes.
+Control stack usage is:        2,712 bytes.
+Binding stack usage is:        1,056 bytes.
+Control and binding stack usage is for the current thread only.
+Garbage collection is currently enabled.
+
+Dynamic space usage is:   272,315,264 bytes.
+Read-
