@@ -1,7 +1,6 @@
 
 (let (list)
   (loop
-    (sb-ext:gc :full t)
     (room nil)
     (terpri)
     (loop repeat 2000000
