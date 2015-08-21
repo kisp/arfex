@@ -10,7 +10,7 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmpPYCJEVS9.tmp' &>'/tmp/tmpNTDAWR8E.tmp'' returned 1
+--disable-debugger <'/tmp/tmp54373I1F.tmp' &>'/tmp/tmpWC6YNTKL.tmp'' returned 1
 
 
 ARFE(2): 
