@@ -1,19 +1,19 @@
 
-ARFE(2): 
+ARFE(3): 
 
-ARFE(2): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
 NIL
-ARFE(3): 
-
-ARFE(3): 
-
-ARFE(3): (get-universal-time)
-
-3649141780
 ARFE(4): 
 
 ARFE(4): 
 
-ARFE(4): 
+ARFE(4): (get-universal-time)
 
-ARFE(4): (DRIBBLE) 
+3649141935
+ARFE(5): 
+
+ARFE(5): 
+
+ARFE(5): 
+
+ARFE(5): (DRIBBLE) 

@@ -1,29 +1,29 @@
 
-ARFE(2): 
+ARFE(3): 
 
-ARFE(2): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
 NIL
-ARFE(3): 
+ARFE(4): 
 
-ARFE(3): 
+ARFE(4): 
 
-ARFE(3): (time
+ARFE(4): (time
   (let ((sum 0))
     (dotimes (i 1000000 sum)
       (incf sum i))))
 Evaluation took:
-  0.004 seconds of real time
+  0.003 seconds of real time
   0.004000 seconds of total run time (0.004000 user, 0.000000 system)
-  100.00% CPU
-  8,553,054 processor cycles
+  133.33% CPU
+  8,499,792 processor cycles
   0 bytes consed
   
 
 499999500000
-ARFE(4): 
+ARFE(5): 
 
-ARFE(4): 
+ARFE(5): 
 
-ARFE(4): 
+ARFE(5): 
 
-ARFE(4): (DRIBBLE) 
+ARFE(5): (DRIBBLE) 
