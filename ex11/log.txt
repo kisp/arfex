@@ -12,8 +12,58 @@ ARFE(4): (+ 2 3)
 5
 ARFE(5): 
 
-ARFE(5): 
+ARFE(5): (with-output-to-file (output "g.dot" :if-exists :supersede)
+  (write-line "digraph g
+        {
 
-ARFE(5): 
+rankdir=LR;
 
-ARFE(5): (DRIBBLE) 
+A[style=\"filled\",fillcolor=\"white\"];
+B[style=\"filled\",fillcolor=\"white\"];
+C[style=\"filled\",fillcolor=\"white\"];
+D[style=\"filled\",fillcolor=\"white\"];
+E[style=\"filled\",fillcolor=\"white\"];
+A -> A;
+A -> B;
+B -> D;
+D -> C;
+C -> B;
+E -> D;
+D -> E;
+}
+"
+              output))
+
+"digraph g
+        {
+
+rankdir=LR;
+
+A[style=\"filled\",fillcolor=\"white\"];
+B[style=\"filled\",fillcolor=\"white\"];
+C[style=\"filled\",fillcolor=\"white\"];
+D[style=\"filled\",fillcolor=\"white\"];
+E[style=\"filled\",fillcolor=\"white\"];
+A -> A;
+A -> B;
+B -> D;
+D -> C;
+C -> B;
+E -> D;
+D -> E;
+}
+"
+ARFE(6): 
+
+ARFE(6): (uiop:run-program "dot -Tpdf g.dot >g.pdf")
+
+NIL
+NIL
+0
+ARFE(7): 
+
+ARFE(7): 
+
+ARFE(7): 
+
+ARFE(7): (DRIBBLE) 
