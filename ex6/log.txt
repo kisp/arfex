@@ -13,9 +13,9 @@ ARFE(4): (time
       (incf sum i))))
 Evaluation took:
   0.004 seconds of real time
-  0.004000 seconds of total run time (0.000000 user, 0.004000 system)
-  100.00% CPU
-  8,342,943 processor cycles
+  0.000000 seconds of total run time (0.000000 user, 0.000000 system)
+  0.00% CPU
+  8,283,921 processor cycles
   0 bytes consed
   
 
