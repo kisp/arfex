@@ -7,10 +7,10 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (print 'test2)
+ARFE(4): (print 'test3)
 
-TEST2 
-TEST2
+TEST3 
+TEST3
 ARFE(5): 
 
 ARFE(5): (with-output-to-file (output "g.dot" :if-exists :supersede)
