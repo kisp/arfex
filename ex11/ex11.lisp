@@ -1,4 +1,4 @@
-(print 'test0)
+(print 'test77)
 
 (with-output-to-file (output "g.dot" :if-exists :supersede)
   (write-line "digraph g
