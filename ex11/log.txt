@@ -7,7 +7,13 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (with-output-to-file (output "g.dot" :if-exists :supersede)
+ARFE(4): (print 'test)
+
+TEST 
+TEST
+ARFE(5): 
+
+ARFE(5): (with-output-to-file (output "g.dot" :if-exists :supersede)
   (write-line "digraph g
         {
 
@@ -48,17 +54,17 @@ E -> D;
 D -> E;
 }
 "
-ARFE(5): 
+ARFE(6): 
 
-ARFE(5): (uiop:run-program "dot -Tpdf g.dot >g.pdf")
+ARFE(6): (uiop:run-program "dot -Tpdf g.dot >g.pdf")
 
 NIL
 NIL
 0
-ARFE(6): 
+ARFE(7): 
 
-ARFE(6): 
+ARFE(7): 
 
-ARFE(6): 
+ARFE(7): 
 
-ARFE(6): (DRIBBLE) 
+ARFE(7): (DRIBBLE) 
