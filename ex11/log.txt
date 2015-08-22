@@ -7,9 +7,9 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (get-universal-time)
+ARFE(4): (+ 2 3)
 
-3649232616
+5
 ARFE(5): 
 
 ARFE(5): 
