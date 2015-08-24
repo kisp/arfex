@@ -56,23 +56,23 @@ ARFE(13):
 
 ARFE(13): (time (length (list-good-examples *5-ir*)))
 Evaluation took:
-  7.026 seconds of real time
-  6.996000 seconds of total run time (6.804000 user, 0.192000 system)
-  [ Run times consist of 0.596 seconds GC time, and 6.400 seconds non-GC time. ]
-  99.57% CPU
-  16,861,239,336 processor cycles
-  5,900,324,208 bytes consed
+  7.585 seconds of real time
+  7.560000 seconds of total run time (7.456000 user, 0.104000 system)
+  [ Run times consist of 0.664 seconds GC time, and 6.896 seconds non-GC time. ]
+  99.67% CPU
+  18,202,998,399 processor cycles
+  5,900,324,000 bytes consed
   
 
 23
 ARFE(14): (time (length (list-good-examples *5*)))
 Evaluation took:
-  197.543 seconds of real time
-  196.692000 seconds of total run time (194.080000 user, 2.612000 system)
-  [ Run times consist of 17.620 seconds GC time, and 179.072 seconds non-GC time. ]
-  99.57% CPU
-  474,091,774,854 processor cycles
-  173,321,882,160 bytes consed
+  204.562 seconds of real time
+  203.668000 seconds of total run time (200.876000 user, 2.792000 system)
+  [ Run times consist of 18.092 seconds GC time, and 185.576 seconds non-GC time. ]
+  99.56% CPU
+  490,936,955,097 processor cycles
+  173,321,879,488 bytes consed
   
 
 62338
