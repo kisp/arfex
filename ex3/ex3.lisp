@@ -1,1 +1,1 @@
-(get-universal-time)
+(progn (get-universal-time) nil)
