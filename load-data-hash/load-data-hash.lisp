@@ -4,8 +4,6 @@
 
 (load-data)
 
-(list-data)
-
 (defun calc-hash! (list)
   (let ((state (md5:make-md5-state)))
     (dolist (item (sort list #'< :key #'cdr))
