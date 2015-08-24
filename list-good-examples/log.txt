@@ -54,23 +54,34 @@ ARFE(13):
 
 ARFE(13): 
 
-ARFE(13): (length (list-good-examples *5-ir*))
+ARFE(13): (time (length (list-good-examples *5-ir*)))
+Evaluation took:
+  8.995 seconds of real time
+  8.908000 seconds of total run time (8.772000 user, 0.136000 system)
+  [ Run times consist of 0.744 seconds GC time, and 8.164 seconds non-GC time. ]
+  99.03% CPU
+  21,586,841,652 processor cycles
+  5,900,324,208 bytes consed
+  
 
 23
-ARFE(14): (length (list-good-examples *5*))
+ARFE(14): (time (length (list-good-examples *5*)))
+Evaluation took:
+  204.975 seconds of real time
+  201.616000 seconds of total run time (198.800000 user, 2.816000 system)
+  [ Run times consist of 17.600 seconds GC time, and 184.016 seconds non-GC time. ]
+  98.36% CPU
+  491,927,526,426 processor cycles
+  173,321,882,160 bytes consed
+  
 
 62338
 ARFE(15): 
 
 ARFE(15): 
 
-ARFE(15): (length (list-good-examples *6-ir*))
+ARFE(15): ;; (time (length (list-good-examples *6-ir*)))
 
-10535
-ARFE(16): 
 
-ARFE(16): 
 
-ARFE(16): 
-
-ARFE(16): (DRIBBLE) 
+(DRIBBLE) 
