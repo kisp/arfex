@@ -30,12 +30,7 @@ Loading /root/quicklisp/local-projects/arfe/data/6-ir.gz...
 (*4-IR* *4* *5-IR* *5* *6-IR*)
 ARFE(7): 
 
-ARFE(7): (list-data)
-
-(*4-IR* *4* *5-IR* *5* *6-IR*)
-ARFE(8): 
-
-ARFE(8): (defun calc-hash! (list)
+ARFE(7): (defun calc-hash! (list)
   (let ((state (md5:make-md5-state)))
     (dolist (item (sort list #'< :key #'cdr))
       (let* ((string
@@ -48,9 +43,9 @@ ARFE(8): (defun calc-hash! (list)
     (md5:finalize-md5-state state)))
 
 CALC-HASH!
-ARFE(9): 
+ARFE(8): 
 
-ARFE(9): (dolist (symbol (list-data))
+ARFE(8): (dolist (symbol (list-data))
   (print symbol)
   (print (length (symbol-value symbol)))
   (print (calc-hash! (symbol-value symbol)))
@@ -76,10 +71,10 @@ ARFE(9): (dolist (symbol (list-data))
 1540944 
 #(71 95 217 95 192 218 59 163 183 125 98 244 82 201 61 175) 
 NIL
-ARFE(10): 
+ARFE(9): 
 
-ARFE(10): 
+ARFE(9): 
 
-ARFE(10): 
+ARFE(9): 
 
-ARFE(10): (DRIBBLE) 
+ARFE(9): (DRIBBLE) 
