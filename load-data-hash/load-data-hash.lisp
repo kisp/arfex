@@ -2,7 +2,7 @@
 
 (deftype octet () '(unsigned-byte 8))
 
-(load-data)
+(defvar *available-symbols* (mapcar 'data-file2symbol (list-data-files)))
 
 (defun calc-hash! (list)
   (let ((state (md5:make-md5-state)))
@@ -16,8 +16,10 @@
         (md5:update-md5-state state vector)))
     (md5:finalize-md5-state state)))
 
-(dolist (symbol (list-data))
+(dolist (symbol *available-symbols*)
+  (load-data symbol)
   (print symbol)
   (print (length (symbol-value symbol)))
   (print (calc-hash! (symbol-value symbol)))
+  (unload-data symbol)
   (terpri))
