@@ -10,7 +10,7 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmpKUCGLSRM.tmp' &>'/tmp/tmp4E20KQH2.tmp'' returned 1
+--disable-debugger <'/tmp/tmp6TIEP6U4.tmp' &>'/tmp/tmpMKY6BYOG.tmp'' returned 1
 
 
 ARFE(3): 
@@ -21,21 +21,23 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (load-data)
+ARFE(4): (load-data '*4-ir* '*4*)
+Loading /root/quicklisp/local-projects/arfe/data/4-ir.gz...
+Loading /root/quicklisp/local-projects/arfe/data/4.gz...
 Unhandled UNBOUND-VARIABLE in thread #<SB-THREAD:THREAD "main thread" RUNNING
                                         {10048C5F73}>:
   The variable *DATA* is unbound.
 
 Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048C5F73}>
-0: (LIST-DATA)
-1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (LOAD-DATA) #<NULL-LEXENV>)
-2: (EVAL (LOAD-DATA))
-3: (SB-EXT:INTERACTIVE-EVAL (LOAD-DATA) :EVAL NIL)
+0: (LOAD-DATA *4-IR* *4*)
+1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (LOAD-DATA (QUOTE *4-IR*) (QUOTE *4*)) #<NULL-LEXENV>)
+2: (EVAL (LOAD-DATA (QUOTE *4-IR*) (QUOTE *4*)))
+3: (SB-EXT:INTERACTIVE-EVAL (LOAD-DATA (QUOTE *4-IR*) (QUOTE *4*)) :EVAL NIL)
 4: (SB-ACLREPL::REP-ONE)
 5: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
 6: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
 7: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
-8: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {10057FC07B}>)
+8: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {10057FD00B}>)
 9: (SB-IMPL::TOPLEVEL-REPL NIL)
 10: (SB-IMPL::TOPLEVEL-INIT)
 11: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
