@@ -48,6 +48,16 @@ ARFE(8): (dolist (symbol *available-symbols*)
   (print (calc-hash! (symbol-value symbol)))
   (unload-data symbol)
   (terpri))
+Loading /root/quicklisp/local-projects/arfe/data/4-connected.gz...
+
+*4-CONNECTED* 
+2818 
+#(255 69 131 207 172 176 22 56 145 82 91 63 92 204 111 247) 
+Loading /root/quicklisp/local-projects/arfe/data/4-ir-connected.gz...
+
+*4-IR-CONNECTED* 
+199 
+#(166 131 204 85 250 188 17 68 129 195 118 235 80 7 27 207) 
 Loading /root/quicklisp/local-projects/arfe/data/4-ir.gz...
 
 *4-IR* 
@@ -58,6 +68,16 @@ Loading /root/quicklisp/local-projects/arfe/data/4.gz...
 *4* 
 3044 
 #(189 200 108 58 206 242 113 31 254 23 49 140 238 251 69 229) 
+Loading /root/quicklisp/local-projects/arfe/data/5-connected.gz...
+
+*5-CONNECTED* 
+285382 
+#(115 153 43 153 10 230 251 146 56 205 49 126 63 115 231 74) 
+Loading /root/quicklisp/local-projects/arfe/data/5-ir-connected.gz...
+
+*5-IR-CONNECTED* 
+9364 
+#(214 128 80 46 116 125 57 170 161 62 147 160 213 235 170 206) 
 Loading /root/quicklisp/local-projects/arfe/data/5-ir.gz...
 
 *5-IR* 
@@ -68,6 +88,11 @@ Loading /root/quicklisp/local-projects/arfe/data/5.gz...
 *5* 
 291968 
 #(127 182 159 179 222 116 15 137 167 165 25 41 202 241 245 95) 
+Loading /root/quicklisp/local-projects/arfe/data/6-ir-connected.gz...
+
+*6-IR-CONNECTED* 
+1530843 
+#(68 44 39 59 121 192 194 173 175 49 173 94 137 246 158 1) 
 Loading /root/quicklisp/local-projects/arfe/data/6-ir.gz...
 
 *6-IR* 
