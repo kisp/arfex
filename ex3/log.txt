@@ -7,9 +7,9 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (get-universal-time)
+ARFE(4): (progn (get-universal-time) nil)
 
-3649409477
+NIL
 ARFE(5): 
 
 ARFE(5): 
