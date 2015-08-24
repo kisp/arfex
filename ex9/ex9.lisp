@@ -1,1 +1,1 @@
-(generate-non-isomorphic 3)
+(nth-value 0 (generate-non-isomorphic 3))
