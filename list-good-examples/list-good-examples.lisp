@@ -19,4 +19,4 @@
 (time (length (list-good-examples *5*)))
 
 
-(time (length (list-good-examples *6-ir*)))
+;; (time (length (list-good-examples *6-ir*)))
