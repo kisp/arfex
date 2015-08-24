@@ -1,17 +1,3 @@
-process $ /usr/bin/docker 'run'
-'-v'
-'/root/arfex:/root/arfex'
-'-v'
-'/tmp:/tmp'
-'-w'
-'/root/arfex/load-data-hash/'
-'--rm'
-'kisp/arfe'
-'/bin/bash'
-'-c'
-'arfe
---disable-debugger <'/tmp/tmp26UD0HHU.tmp' &>'/tmp/tmpXKM2EE42.tmp'' returned 1
-
 
 ARFE(3): 
 
@@ -36,39 +22,62 @@ OCTET
 ARFE(6): 
 
 ARFE(6): (defvar *available-symbols* (mapcar 'data-file2symbol (list-data-files)))
-; in: DEFVAR *AVAILABLE-SYMBOLS*
-;     (ARFE::LIST-DATA-FILES)
-; 
-; caught STYLE-WARNING:
-;   undefined function: LIST-DATA-FILES
-; 
-; compilation unit finished
-;   Undefined function:
-;     LIST-DATA-FILES
-;   caught 1 STYLE-WARNING condition
-Unhandled UNDEFINED-FUNCTION in thread #<SB-THREAD:THREAD "main thread" RUNNING
-                                          {10048C5F43}>:
-  The function ARFE::LIST-DATA-FILES is undefined.
 
-Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048C5F43}>
-0: ("undefined function")
-1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (LIST-DATA-FILES) #<NULL-LEXENV>)
-2: (SB-INT:SIMPLE-EVAL-IN-LEXENV (MAPCAR (QUOTE DATA-FILE2SYMBOL) (LIST-DATA-FILES)) #<NULL-LEXENV>)
-3: (SB-INT:SIMPLE-EVAL-IN-LEXENV (PROGN (MAPCAR (QUOTE DATA-FILE2SYMBOL) (LIST-DATA-FILES))) #<NULL-LEXENV>)
-4: (SB-INT:SIMPLE-EVAL-IN-LEXENV (UNLESS (BOUNDP (QUOTE *AVAILABLE-SYMBOLS*)) (MAPCAR (QUOTE DATA-FILE2SYMBOL) (LIST-DATA-FILES))) #<NULL-LEXENV>)
-5: (SB-INT:SIMPLE-EVAL-IN-LEXENV (SB-IMPL::%DEFVAR (QUOTE *AVAILABLE-SYMBOLS*) (UNLESS (BOUNDP (QUOTE *AVAILABLE-SYMBOLS*)) (MAPCAR (QUOTE DATA-FILE2SYMBOL) (LIST-DATA-FILES))) (QUOTE T) NIL (QUOTE NIL) (SB-C:SOURCE-LOCATION)) #<NULL-LEXENV>)
-6: (SB-INT:SIMPLE-EVAL-IN-LEXENV (DEFVAR *AVAILABLE-SYMBOLS* (MAPCAR (QUOTE DATA-FILE2SYMBOL) (LIST-DATA-FILES))) #<NULL-LEXENV>)
-7: (EVAL (DEFVAR *AVAILABLE-SYMBOLS* (MAPCAR (QUOTE DATA-FILE2SYMBOL) (LIST-DATA-FILES))))
-8: (SB-EXT:INTERACTIVE-EVAL (DEFVAR *AVAILABLE-SYMBOLS* (MAPCAR (QUOTE DATA-FILE2SYMBOL) (LIST-DATA-FILES))) :EVAL NIL)
-9: (SB-ACLREPL::REP-ONE)
-10: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
-11: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
-12: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
-13: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {10057F500B}>)
-14: (SB-IMPL::TOPLEVEL-REPL NIL)
-15: (SB-IMPL::TOPLEVEL-INIT)
-16: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
-17: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
+*AVAILABLE-SYMBOLS*
+ARFE(7): 
 
-unhandled condition in --disable-debugger mode, quitting
+ARFE(7): (defun calc-hash! (list)
+  (let ((state (md5:make-md5-state)))
+    (dolist (item (sort list #'< :key #'cdr))
+      (let* ((string
+               (with-output-to-string (output)
+                 (print item output)))
+             (vector (make-array (length string)
+                                 :element-type 'octet
+                                 :initial-contents (map 'list #'char-code string))))
+        (md5:update-md5-state state vector)))
+    (md5:finalize-md5-state state)))
 
+CALC-HASH!
+ARFE(8): 
+
+ARFE(8): (dolist (symbol *available-symbols*)
+  (load-data symbol)
+  (print symbol)
+  (print (length (symbol-value symbol)))
+  (print (calc-hash! (symbol-value symbol)))
+  (unload-data symbol)
+  (terpri))
+Loading /root/quicklisp/local-projects/arfe/data/4-ir.gz...
+
+*4-IR* 
+218 
+#(13 212 196 15 111 85 214 47 227 40 49 93 136 3 252 25) 
+Loading /root/quicklisp/local-projects/arfe/data/4.gz...
+
+*4* 
+3044 
+#(189 200 108 58 206 242 113 31 254 23 49 140 238 251 69 229) 
+Loading /root/quicklisp/local-projects/arfe/data/5-ir.gz...
+
+*5-IR* 
+9608 
+#(253 196 24 133 62 32 126 22 147 56 162 197 156 48 24 67) 
+Loading /root/quicklisp/local-projects/arfe/data/5.gz...
+
+*5* 
+291968 
+#(127 182 159 179 222 116 15 137 167 165 25 41 202 241 245 95) 
+Loading /root/quicklisp/local-projects/arfe/data/6-ir.gz...
+
+*6-IR* 
+1540944 
+#(71 95 217 95 192 218 59 163 183 125 98 244 82 201 61 175) 
+NIL
+ARFE(9): 
+
+ARFE(9): 
+
+ARFE(9): 
+
+ARFE(9): (DRIBBLE) 
