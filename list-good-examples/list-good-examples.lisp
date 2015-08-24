@@ -15,8 +15,8 @@
 (length (list-good-examples *4*))
 
 
-(length (list-good-examples *5-ir*))
-(length (list-good-examples *5*))
+(time (length (list-good-examples *5-ir*)))
+(time (length (list-good-examples *5*)))
 
 
-(length (list-good-examples *6-ir*))
+(time (length (list-good-examples *6-ir*)))
