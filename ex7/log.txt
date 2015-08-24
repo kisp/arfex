@@ -10,7 +10,7 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmpY630T7TT.tmp' &>'/tmp/tmpDHCOSA9J.tmp'' returned 1
+--disable-debugger <'/tmp/tmp2S54IDH1.tmp' &>'/tmp/tmpFW6MX2QF.tmp'' returned 1
 
 
 ARFE(3): 
@@ -23,11 +23,11 @@ ARFE(4):
 
 ARFE(4): (/ 10 0)
 Unhandled DIVISION-BY-ZERO in thread #<SB-THREAD:THREAD "main thread" RUNNING
-                                        {10048CDEC3}>:
+                                        {10048C5EC3}>:
   arithmetic error DIVISION-BY-ZERO signalled
 Operation was /, operands (10 0).
 
-Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048CDEC3}>
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048C5EC3}>
 0: (SB-KERNEL::INTEGER-/-INTEGER 10 0)
 1: (/ 10 0)
 2: (SB-INT:SIMPLE-EVAL-IN-LEXENV (/ 10 0) #<NULL-LEXENV>)
@@ -37,7 +37,7 @@ Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048CDEC3}>
 6: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
 7: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
 8: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
-9: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {100580500B}>)
+9: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {10057FC07B}>)
 10: (SB-IMPL::TOPLEVEL-REPL NIL)
 11: (SB-IMPL::TOPLEVEL-INIT)
 12: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
