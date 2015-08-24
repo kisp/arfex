@@ -1,3 +1,17 @@
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/load-data-hash/'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmpPM0YRHEN.tmp' &>'/tmp/tmp2ONY6XC1.tmp'' returned 1
+
 
 ARFE(3): 
 
@@ -22,59 +36,24 @@ OCTET
 ARFE(6): 
 
 ARFE(6): (load-data)
-Loading /root/quicklisp/local-projects/arfe/data/4-ir.gz...
-Loading /root/quicklisp/local-projects/arfe/data/4.gz...
-Loading /root/quicklisp/local-projects/arfe/data/5-ir.gz...
-Loading /root/quicklisp/local-projects/arfe/data/5.gz...
-Loading /root/quicklisp/local-projects/arfe/data/6-ir.gz...
-(*4-IR* *4* *5-IR* *5* *6-IR*)
-ARFE(7): 
+Unhandled UNBOUND-VARIABLE in thread #<SB-THREAD:THREAD "main thread" RUNNING
+                                        {10048C5F43}>:
+  The variable *DATA* is unbound.
 
-ARFE(7): (defun calc-hash! (list)
-  (let ((state (md5:make-md5-state)))
-    (dolist (item (sort list #'< :key #'cdr))
-      (let* ((string
-               (with-output-to-string (output)
-                 (print item output)))
-             (vector (make-array (length string)
-                                 :element-type 'octet
-                                 :initial-contents (map 'list #'char-code string))))
-        (md5:update-md5-state state vector)))
-    (md5:finalize-md5-state state)))
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048C5F43}>
+0: (LIST-DATA)
+1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (LOAD-DATA) #<NULL-LEXENV>)
+2: (EVAL (LOAD-DATA))
+3: (SB-EXT:INTERACTIVE-EVAL (LOAD-DATA) :EVAL NIL)
+4: (SB-ACLREPL::REP-ONE)
+5: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
+6: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
+7: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
+8: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {10057F720B}>)
+9: (SB-IMPL::TOPLEVEL-REPL NIL)
+10: (SB-IMPL::TOPLEVEL-INIT)
+11: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
+12: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
 
-CALC-HASH!
-ARFE(8): 
+unhandled condition in --disable-debugger mode, quitting
 
-ARFE(8): (dolist (symbol (list-data))
-  (print symbol)
-  (print (length (symbol-value symbol)))
-  (print (calc-hash! (symbol-value symbol)))
-  (terpri))
-
-*4-IR* 
-218 
-#(13 212 196 15 111 85 214 47 227 40 49 93 136 3 252 25) 
-
-*4* 
-3044 
-#(189 200 108 58 206 242 113 31 254 23 49 140 238 251 69 229) 
-
-*5-IR* 
-9608 
-#(253 196 24 133 62 32 126 22 147 56 162 197 156 48 24 67) 
-
-*5* 
-291968 
-#(127 182 159 179 222 116 15 137 167 165 25 41 202 241 245 95) 
-
-*6-IR* 
-1540944 
-#(71 95 217 95 192 218 59 163 183 125 98 244 82 201 61 175) 
-NIL
-ARFE(9): 
-
-ARFE(9): 
-
-ARFE(9): 
-
-ARFE(9): (DRIBBLE) 
