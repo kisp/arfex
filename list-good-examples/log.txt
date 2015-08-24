@@ -1,17 +1,3 @@
-process $ /usr/bin/docker 'run'
-'-v'
-'/root/arfex:/root/arfex'
-'-v'
-'/tmp:/tmp'
-'-w'
-'/root/arfex/list-good-examples/'
-'--rm'
-'kisp/arfe'
-'/bin/bash'
-'-c'
-'arfe
---disable-debugger <'/tmp/tmp6TIEP6U4.tmp' &>'/tmp/tmpMKY6BYOG.tmp'' returned 1
-
 
 ARFE(3): 
 
@@ -24,24 +10,53 @@ ARFE(4):
 ARFE(4): (load-data '*4-ir* '*4*)
 Loading /root/quicklisp/local-projects/arfe/data/4-ir.gz...
 Loading /root/quicklisp/local-projects/arfe/data/4.gz...
-Unhandled UNBOUND-VARIABLE in thread #<SB-THREAD:THREAD "main thread" RUNNING
-                                        {10048C5F73}>:
-  The variable *DATA* is unbound.
+(*4-IR* *4*)
+ARFE(5): 
 
-Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10048C5F73}>
-0: (LOAD-DATA *4-IR* *4*)
-1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (LOAD-DATA (QUOTE *4-IR*) (QUOTE *4*)) #<NULL-LEXENV>)
-2: (EVAL (LOAD-DATA (QUOTE *4-IR*) (QUOTE *4*)))
-3: (SB-EXT:INTERACTIVE-EVAL (LOAD-DATA (QUOTE *4-IR*) (QUOTE *4*)) :EVAL NIL)
-4: (SB-ACLREPL::REP-ONE)
-5: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
-6: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
-7: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
-8: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {10057FD00B}>)
-9: (SB-IMPL::TOPLEVEL-REPL NIL)
-10: (SB-IMPL::TOPLEVEL-INIT)
-11: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
-12: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
+ARFE(5): (length (list-good-examples (generate-non-isomorphic 2 :irreflexive t)))
+     100.0 % done. found 3
+0
+ARFE(6): (length (list-good-examples (generate-non-isomorphic 2 :irreflexive nil)))
+     100.0 % done. found 10
+0
+ARFE(7): 
 
-unhandled condition in --disable-debugger mode, quitting
+ARFE(7): 
 
+ARFE(7): (length (list-good-examples (generate-non-isomorphic 3 :irreflexive t)))
+     100.0 % done. found 16
+0
+ARFE(8): (length (list-good-examples (generate-non-isomorphic 3 :irreflexive nil)))
+     100.0 % done. found 104
+6
+ARFE(9): 
+
+ARFE(9): 
+
+ARFE(9): (length (list-good-examples (generate-non-isomorphic 4 :irreflexive t)))
+     100.0 % done. found 218
+0
+ARFE(10): (length (list-good-examples (generate-non-isomorphic 4 :irreflexive nil)))
+     100.0 % done. found 3044
+448
+ARFE(11): 
+
+ARFE(11): (length (list-good-examples *4-ir*))
+
+0
+ARFE(12): (length (list-good-examples *4*))
+
+448
+ARFE(13): 
+
+ARFE(13): 
+
+ARFE(13): ;; (time (length (list-good-examples *5-ir*)))
+;; (time (length (list-good-examples *5*)))
+
+
+;; (time (length (list-good-examples *6-ir*)))
+
+
+
+(DRIBBLE) 
