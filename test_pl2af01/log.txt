@@ -32,12 +32,12 @@ ARFE(8):
 
 ARFE(8): (list-extensions *g* #'stable-extension-p)
 
-((A1 A2 A3))
+((A2 A3 A6) (A1 A3 A5) (A1 A2 A4))
 ARFE(9): 
 
 ARFE(9): (list-extensions *g* #'complete-extension-p)
 
-((A1 A2 A3))
+(NIL (A2 A3 A6) (A1 A3 A5) (A1 A2 A4))
 ARFE(10): 
 
 ARFE(10): 
