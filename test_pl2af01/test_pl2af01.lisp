@@ -8,3 +8,5 @@
 (uiop:run-program "dot -Tpdf af.dot >af.pdf")
 
 (list-extensions *g* #'stable-extension-p)
+
+(list-extensions *g* #'complete-extension-p)
