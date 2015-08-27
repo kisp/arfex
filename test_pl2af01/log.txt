@@ -1,3 +1,17 @@
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/test_pl2af01/'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmpUNNGT9CF.tmp' &>'/tmp/tmp4L3W83SU.tmp'' returned 1
+
 
 ARFE(3): 
 
@@ -7,25 +21,40 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (pl2af '(x (not y) (imp x y)))
+ARFE(4): (defparameter *g* (pl2af '(x (not y) (imp x y))))
 
-#<DIGRAPH {1006184283}>
-(#S(ARFE.PL2AF::ARGUMENT :NAME A1 :FORMULAS ((IMP X Y)) :CONCLUSION (IMP X Y))
- #S(ARFE.PL2AF::ARGUMENT :NAME A2 :FORMULAS ((NOT Y)) :CONCLUSION (NOT Y))
- #S(ARFE.PL2AF::ARGUMENT :NAME A3 :FORMULAS (X) :CONCLUSION X)
- #S(ARFE.PL2AF::ARGUMENT
-    :NAME A4
-    :FORMULAS ((NOT Y) (IMP X Y))
-    :CONCLUSION (NOT X))
- #S(ARFE.PL2AF::ARGUMENT :NAME A5 :FORMULAS (X (IMP X Y)) :CONCLUSION Y)
- #S(ARFE.PL2AF::ARGUMENT
-    :NAME A6
-    :FORMULAS (X (NOT Y))
-    :CONCLUSION (NOT (IMP X Y))))
+*G*
 ARFE(5): 
 
-ARFE(5): 
+ARFE(5): (defparameter *args* (nth-value 1 (pl2af '(x (not y) (imp x y)))))
 
-ARFE(5): 
+*ARGS*
+ARFE(6): 
 
-ARFE(5): (DRIBBLE) 
+ARFE(6): (with-open-file (out "af.dot" :direction :output :if-exists :supersede)
+  (print-af-to-dot *g* out))
+Unhandled TYPE-ERROR in thread #<SB-THREAD:THREAD "main thread" RUNNING
+                                  {1004C75F43}>:
+  The value A1 is not of type UNSIGNED-BYTE.
+
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {1004C75F43}>
+0: (NTHCDR A1 (ARFE.DOT::A ARFE.DOT::B ARFE.DOT::C ARFE.DOT::D ARFE.DOT::E ARFE.DOT::F ARFE.DOT::G ARFE.DOT::H ARFE.DOT::I ARFE.DOT::J ARFE.DOT::K ARFE.DOT::L ...)) [tl,external]
+1: (ARFE.DOT::M A1)
+2: (ARFE.DOT::CONVERT-GRAPH-TO-ABC #<DIGRAPH {1006193E33}>)
+3: (PRINT-AF-TO-DOT #<DIGRAPH {1006193E33}> #<SB-SYS:FD-STREAM for "file /root/arfex/test_pl2af01/af.dot" {1006FD6763}>)
+4: ((LAMBDA ()))
+5: (SB-INT:SIMPLE-EVAL-IN-LEXENV (WITH-OPEN-FILE (OUT "af.dot" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (PRINT-AF-TO-DOT *G* OUT)) #<NULL-LEXENV>)
+6: (EVAL (WITH-OPEN-FILE (OUT "af.dot" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (PRINT-AF-TO-DOT *G* OUT)))
+7: (SB-EXT:INTERACTIVE-EVAL (WITH-OPEN-FILE (OUT "af.dot" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (PRINT-AF-TO-DOT *G* OUT)) :EVAL NIL)
+8: (SB-ACLREPL::REP-ONE)
+9: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
+10: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
+11: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
+12: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {1005BC2E7B}>)
+13: (SB-IMPL::TOPLEVEL-REPL NIL)
+14: (SB-IMPL::TOPLEVEL-INIT)
+15: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
+16: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
+
+unhandled condition in --disable-debugger mode, quitting
+
