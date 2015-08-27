@@ -7,13 +7,18 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (clpl:valid-enumerate-p '(clpl:eqv (clpl:imp a b) (or (not a) b)))
+ARFE(4): (valid-enumerate-p '(eqv (imp a b) (or (not a) b)))
 
 T
 ARFE(5): 
 
-ARFE(5): 
+ARFE(5): (print-latex '(eqv (imp a b) (or (not a) b)))
+( A \to B ) \leftrightarrow ( \lnot A \lor B ) 
+NIL
+ARFE(6): 
 
-ARFE(5): 
+ARFE(6): 
 
-ARFE(5): (DRIBBLE) 
+ARFE(6): 
+
+ARFE(6): (DRIBBLE) 
