@@ -30,18 +30,25 @@ NIL
 0
 ARFE(8): 
 
-ARFE(8): (list-extensions *g* #'stable-extension-p)
+ARFE(8): (uiop:run-program "dot -Tpng af.dot >af.png")
 
-((A2 A3 A6) (A1 A3 A5) (A1 A2 A4))
+NIL
+NIL
+0
 ARFE(9): 
 
-ARFE(9): (list-extensions *g* #'complete-extension-p)
+ARFE(9): (list-extensions *g* #'stable-extension-p)
+
+((A2 A3 A6) (A1 A3 A5) (A1 A2 A4))
+ARFE(10): 
+
+ARFE(10): (list-extensions *g* #'complete-extension-p)
 
 (NIL (A2 A3 A6) (A1 A3 A5) (A1 A2 A4))
-ARFE(10): 
+ARFE(11): 
 
-ARFE(10): 
+ARFE(11): 
 
-ARFE(10): 
+ARFE(11): 
 
-ARFE(10): (DRIBBLE) 
+ARFE(11): (DRIBBLE) 
