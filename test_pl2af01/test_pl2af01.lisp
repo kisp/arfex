@@ -7,6 +7,8 @@
 
 (uiop:run-program "dot -Tpdf af.dot >af.pdf")
 
+(uiop:run-program "dot -Tpng af.dot >af.png")
+
 (list-extensions *g* #'stable-extension-p)
 
 (list-extensions *g* #'complete-extension-p)
