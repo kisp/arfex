@@ -1,3 +1,17 @@
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/ex1/'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmp3WS4A21E.tmp' &>'/tmp/tmpPQ4U054N.tmp'' returned 1
+
 
 ARFE(3): 
 
@@ -7,13 +21,35 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (+ 2 10100)
+ARFE(4): (in-readtable :arfe)
+; in: IN-READTABLE :ARFE
+;     (ARFE::IN-READTABLE :ARFE)
+; 
+; caught STYLE-WARNING:
+;   undefined function: IN-READTABLE
+; 
+; compilation unit finished
+;   Undefined function:
+;     IN-READTABLE
+;   caught 1 STYLE-WARNING condition
+Unhandled UNDEFINED-FUNCTION in thread #<SB-THREAD:THREAD "main thread" RUNNING
+                                          {1004C7DEC3}>:
+  The function ARFE::IN-READTABLE is undefined.
 
-10102
-ARFE(5): 
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {1004C7DEC3}>
+0: ("undefined function")
+1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (IN-READTABLE :ARFE) #<NULL-LEXENV>)
+2: (EVAL (IN-READTABLE :ARFE))
+3: (SB-EXT:INTERACTIVE-EVAL (IN-READTABLE :ARFE) :EVAL NIL)
+4: (SB-ACLREPL::REP-ONE)
+5: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
+6: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
+7: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
+8: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {1005BC0CEB}>)
+9: (SB-IMPL::TOPLEVEL-REPL NIL)
+10: (SB-IMPL::TOPLEVEL-INIT)
+11: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
+12: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
 
-ARFE(5): 
+unhandled condition in --disable-debugger mode, quitting
 
-ARFE(5): 
-
-ARFE(5): (DRIBBLE) 
