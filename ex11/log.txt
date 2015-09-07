@@ -1,5 +1,14 @@
-ARFE: (with-output-to-file (output "g.dot" :if-exists :supersede)
-        (write-line "digraph g
+
+ARFE(3): 
+
+ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+ARFE(4): 
+
+ARFE(4): 
+
+ARFE(4): (with-output-to-file (output "g.dot" :if-exists :supersede)
+  (write-line "digraph g
         {
 
 rankdir=LR;
@@ -18,17 +27,18 @@ E -> D;
 D -> E;
 }
 "
-                    output))
-digraph g
+              output))
+
+"digraph g
         {
 
 rankdir=LR;
 
-A[style="filled",fillcolor="white"];
-B[style="filled",fillcolor="white"];
-C[style="filled",fillcolor="white"];
-D[style="filled",fillcolor="white"];
-E[style="filled",fillcolor="white"];
+A[style=\"filled\",fillcolor=\"white\"];
+B[style=\"filled\",fillcolor=\"white\"];
+C[style=\"filled\",fillcolor=\"white\"];
+D[style=\"filled\",fillcolor=\"white\"];
+E[style=\"filled\",fillcolor=\"white\"];
 A -> A;
 A -> B;
 B -> D;
@@ -37,10 +47,18 @@ C -> B;
 E -> D;
 D -> E;
 }
+"
+ARFE(5): 
 
+ARFE(5): (uiop:run-program "dot -Tpdf g.dot >g.pdf")
 
-ARFE: (uiop/run-program:run-program "dot -Tpdf g.dot >g.pdf")
-nil
-nil
+NIL
+NIL
 0
+ARFE(6): 
 
+ARFE(6): 
+
+ARFE(6): 
+
+ARFE(6): (DRIBBLE) 

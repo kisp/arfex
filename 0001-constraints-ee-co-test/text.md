@@ -130,12 +130,12 @@ $$ X = \{x_1,x_2,x_3,x_1',x_2',x_3'\}.$$
 
 $$*constraints*$$
 
-- $\lnot ( a_5 \land a_3 ) $
-- $\lnot ( a_4 \land a_5 ) $
-- $\lnot ( a_3 \land a_4 ) $
-- $\lnot ( a_2 \land a_1 ) $
-- $\lnot ( a_1 \land a_3 ) $
-- $\lnot ( a_1 \land a_2 ) $
+- $\lnot ( A_5 \land A_3 ) $
+- $\lnot ( A_4 \land A_5 ) $
+- $\lnot ( A_3 \land A_4 ) $
+- $\lnot ( A_2 \land A_1 ) $
+- $\lnot ( A_1 \land A_3 ) $
+- $\lnot ( A_1 \land A_2 ) $
 
 
 

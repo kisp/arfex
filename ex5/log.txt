@@ -1,14 +1,31 @@
-ARFE: (quicklisp-client:quickload "cl-ppcre")
+
+ARFE(3): 
+
+ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+ARFE(4): 
+
+ARFE(4): 
+
+ARFE(4): (ql:quickload "cl-ppcre")
 To load "cl-ppcre":
   Load 1 ASDF system:
     cl-ppcre
 ; Loading "cl-ppcre"
 
-(cl-ppcre)
+("cl-ppcre")
+ARFE(5): 
 
-ARFE: (cl-ppcre:scan "foo" "hallo foo")
+ARFE(5): (ppcre:scan "foo" "hallo foo")
+
 6
 9
 #()
 #()
+ARFE(6): 
 
+ARFE(6): 
+
+ARFE(6): 
+
+ARFE(6): (DRIBBLE) 
