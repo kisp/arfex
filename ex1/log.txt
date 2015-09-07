@@ -1,17 +1,3 @@
-process $ /usr/bin/docker 'run'
-'-v'
-'/root/arfex:/root/arfex'
-'-v'
-'/tmp:/tmp'
-'-w'
-'/root/arfex/ex1/'
-'--rm'
-'kisp/arfe'
-'/bin/bash'
-'-c'
-'arfe
---disable-debugger <'/tmp/tmpF9PT7DQ2.tmp' &>'/tmp/tmpZVXJSSK9.tmp'' returned 1
-
 
 ARFE(3): 
 
@@ -22,40 +8,17 @@ ARFE(4):
 ARFE(4): 
 
 ARFE(4): (in-readtable* arfe)
-; in: IN-READTABLE* ARFE
-;     (ARFE::IN-READTABLE* ARFE::ARFE)
-; 
-; caught WARNING:
-;   undefined variable: ARFE
-; 
-; caught STYLE-WARNING:
-;   undefined function: IN-READTABLE*
-; 
-; compilation unit finished
-;   Undefined function:
-;     IN-READTABLE*
-;   Undefined variable:
-;     ARFE
-;   caught 1 WARNING condition
-;   caught 1 STYLE-WARNING condition
-Unhandled UNBOUND-VARIABLE in thread #<SB-THREAD:THREAD "main thread" RUNNING
-                                        {10060EDEC3}>:
-  The variable ARFE is unbound.
 
-Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {10060EDEC3}>
-0: ((LAMBDA ()))
-1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (IN-READTABLE* ARFE) #<NULL-LEXENV>)
-2: (EVAL (IN-READTABLE* ARFE))
-3: (SB-EXT:INTERACTIVE-EVAL (IN-READTABLE* ARFE) :EVAL NIL)
-4: (SB-ACLREPL::REP-ONE)
-5: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
-6: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
-7: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
-8: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {1007031BCB}>)
-9: (SB-IMPL::TOPLEVEL-REPL NIL)
-10: (SB-IMPL::TOPLEVEL-INIT)
-11: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
-12: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
+ARFE
+ARFE(5): 
 
-unhandled condition in --disable-debugger mode, quitting
+ARFE(5): (write-line #?[foo bar ${(+ 2 10100)}])
+foo bar 10102
+"foo bar 10102"
+ARFE(6): 
 
+ARFE(6): 
+
+ARFE(6): 
+
+ARFE(6): (DRIBBLE) 
