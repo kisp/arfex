@@ -10,6 +10,11 @@
 	  (princ x))
 	(terpri))))
 
+(defun m$ (x) (format nil "$~A$" x))
+
+(defun items (&rest args)
+  (format nil "~{- ~A~%~}" args))
+
 (defun latex-set (list)
   (format nil "\\{\\,~{~A~^,~}\\,\\}" list))
 
@@ -22,6 +27,11 @@
 (defun latex-set-set (list)
   (latex-set (mapcar 'latex-set list)))
 
+(defun latex-log (x)
+  (with-output-to-string (*standard-output*)
+    (clpl:print-latex x)))
+
+
 (with-open-file (*standard-output* "text.md"
 				   :direction :output
 				   :if-exists :supersede)
@@ -29,6 +39,13 @@
 [
 
 # test
+
+$,(latex-set '(x_1 x_2)) $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
 
 Ein Graph
 ,(defparameter *g* (convert-graph-to-abc-if-needed (from-adj '(5 . 13109284))))
@@ -144,6 +161,14 @@ und
 $$ X_{\phi'} = \{x_1',x_2',x_3'\}$$
 und daher
 $$ X = \{x_1,x_2,x_3,x_1',x_2',x_3'\}.$$
+
+# Konfliktfreiheit
+
+## Beispiel
+
+$$,(defparameter *constraints* (mapcar (lambda (e) `(not (and ,@e))) (edges *g*)))$$
+
+,(apply #'items (mapcar #'m$ (mapcar #'latex-log *constraints*)))
 
 ]
 ))
