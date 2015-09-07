@@ -1,5 +1,21 @@
+<<<<<<< HEAD
 ARFE: (in-readtable* arfe)
 arfe
+=======
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/0001-constraints-ee-co-test/'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmpSE0QLD5B.tmp' &>'/tmp/tmp65JBUOWY.tmp'' returned 1
+>>>>>>> 87122daf30bb7e9ec07bbc36cadbdf7c0f90af70
 
 ARFE: (defun emit (list)
         (if (stringp list)
@@ -36,10 +52,69 @@ ARFE: (with-open-file
         (emit
          (list "
 
+<<<<<<< HEAD
 # test
 
 $"
                (latex-set '(x_1 x_2)) " $
+=======
+ARFE(6): (defun m$ (x) (format nil "$~A$" x))
+
+M$
+ARFE(7): 
+
+ARFE(7): (defun items (&rest args)
+  (format nil "~{- ~A~%~}" args))
+
+ITEMS
+ARFE(8): 
+
+ARFE(8): (defun latex-set (list)
+  (format nil "\\{\\,~{~A~^,~}\\,\\}" list))
+
+LATEX-SET
+ARFE(9): 
+
+ARFE(9): (defun latex-tuple (list)
+  (format nil "(~{~A~^,~})" list))
+
+LATEX-TUPLE
+ARFE(10): 
+
+ARFE(10): (defun latex-rel (list)
+  (format nil "\\{\\,~{~A~^,~}\\,\\}" (mapcar 'latex-tuple list)))
+
+LATEX-REL
+ARFE(11): 
+
+ARFE(11): (defun latex-set-set (list)
+  (latex-set (mapcar 'latex-set list)))
+
+LATEX-SET-SET
+ARFE(12): 
+
+ARFE(12): (defun latex-log (x)
+  (with-output-to-string (*standard-output*)
+    (clpl:print-latex x)))
+
+LATEX-LOG
+ARFE(13): 
+
+ARFE(13): 
+
+ARFE(13): (with-open-file (*standard-output* "text.md"
+				   :direction :output
+				   :if-exists :supersede)
+  (emit
+[
+>>>>>>> 87122daf30bb7e9ec07bbc36cadbdf7c0f90af70
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
+
+$,(latex-set '(x_1 x_2)) $
 
 $x$     | $f(x)$
 --------|---------
@@ -170,12 +245,17 @@ $$ X_{\\phi} = \\{x_1,x_2,x_3\\} $$
 und
 $$ X_{\\phi'} = \\{x_1',x_2',x_3'\\}$$
 und daher
+<<<<<<< HEAD
 $$ X = \\{x_1,x_2,x_3,x_1',x_2',x_3'\\}.$$
+=======
+$$ X = \{x_1,x_2,x_3,x_1',x_2',x_3'\}.$$
+>>>>>>> 87122daf30bb7e9ec07bbc36cadbdf7c0f90af70
 
 # Konfliktfreiheit
 
 ## Beispiel
 
+<<<<<<< HEAD
 $$"
                (defparameter *constraints*
                  (mapcar (lambda (e) `(not (and ,@e))) (edges *g*)))
@@ -199,6 +279,34 @@ $$"
 ;      #:G34
 ;       (UNLESS (OR (ENDP #:G28)) (GO #:G33))
 ;       (RETURN-FROM #:G32 (PROGN (TRULY-THE LIST #)))))
+=======
+$$,(defparameter *constraints* (mapcar (lambda (e) `(not (and ,@e))) (edges *g*)))$$
+
+,(apply #'items (mapcar #'m$ (mapcar #'latex-log *constraints*)))
+
+]
+))
+; in:
+;      WITH-OPEN-FILE (*STANDARD-OUTPUT* "text.md" :DIRECTION :OUTPUT :IF-EXISTS
+;                  :SUPERSEDE)
+;     (MAPCAR #'ARFE::LATEX-LOG ARFE::*CONSTRAINTS*)
+; --> LET LET SB-INT:DO-ANONYMOUS BLOCK 
+; ==>
+;   (LET ((#:G28 #:G29) (#:G27 ARFE::*CONSTRAINTS*))
+;     (TAGBODY
+;       (GO #:G32)
+;      #:G31
+;       (TAGBODY (SB-KERNEL:%RPLACD #:G28 (SETQ #)))
+;       (PSETQ #:G27 (CDR #:G27))
+;      #:G32
+;       (UNLESS (OR (ENDP #:G27)) (GO #:G31))
+;       (RETURN-FROM #:G30 (PROGN (TRULY-THE LIST #)))))
+; 
+; caught WARNING:
+;   undefined variable: *CONSTRAINTS*
+
+;     (GRAPH:NODES ARFE::*G*)
+>>>>>>> 87122daf30bb7e9ec07bbc36cadbdf7c0f90af70
 ; 
 ; caught warning:
 ;   undefined variable: *constraints*
@@ -209,6 +317,7 @@ $$"
 ;   undefined variable: *g*
 ; 
 ; compilation unit finished
+<<<<<<< HEAD
 ;   Undefined variables:
 ;     *constraints* *g*
 ;   caught 2 WARNING conditions
@@ -247,4 +356,90 @@ ARFE: (uiop/run-program:run-program "pandoc -s -t latex text.md -o text-s.tex")
 nil
 nil
 0
+=======
+;   Undefined function:
+;     CONVERT-GRAPH-TO-ABC-IF-NEEDED
+;   Undefined variables:
+;     *CONSTRAINTS* *G*
+;   caught 2 WARNING conditions
+;   caught 1 STYLE-WARNING condition
+Unhandled UNDEFINED-FUNCTION in thread #<SB-THREAD:THREAD "main thread" RUNNING
+                                          {1006105FE3}>:
+  The function ARFE::CONVERT-GRAPH-TO-ABC-IF-NEEDED is undefined.
+
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {1006105FE3}>
+0: ("undefined function")
+1: ((LAMBDA ()))
+2: (SB-INT:SIMPLE-EVAL-IN-LEXENV (WITH-OPEN-FILE (*STANDARD-OUTPUT* "text.md" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (EMIT (LIST "
+
+# test
+
+$" (LATEX-SET (QUOTE #)) " $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
+
+Ein Graph
+" (DEFPARAMETER *G* (CONVERT-GRAPH-TO-ABC-IF-NEEDED #)) "
+mit Knoten $" (LATEX-SET (NODES *G*)) " $
+und Kanten $" (LATEX-REL (EDGES *G*)) " $.
+
+Semantik | Extensionen
+---------|------------
+GR       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
+CO       | $" ...))) #<NULL-LEXENV>)
+3: (EVAL (WITH-OPEN-FILE (*STANDARD-OUTPUT* "text.md" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (EMIT (LIST "
+
+# test
+
+$" (LATEX-SET (QUOTE #)) " $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
+
+Ein Graph
+" (DEFPARAMETER *G* (CONVERT-GRAPH-TO-ABC-IF-NEEDED #)) "
+mit Knoten $" (LATEX-SET (NODES *G*)) " $
+und Kanten $" (LATEX-REL (EDGES *G*)) " $.
+
+Semantik | Extensionen
+---------|------------
+GR       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
+CO       | $" ...))))
+4: (SB-EXT:INTERACTIVE-EVAL (WITH-OPEN-FILE (*STANDARD-OUTPUT* "text.md" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (EMIT (LIST "
+
+# test
+
+$" (LATEX-SET (QUOTE #)) " $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
+
+Ein Graph
+" (DEFPARAMETER *G* (CONVERT-GRAPH-TO-ABC-IF-NEEDED #)) "
+mit Knoten $" (LATEX-SET (NODES *G*)) " $
+und Kanten $" (LATEX-REL (EDGES *G*)) " $.
+
+Semantik | Extensionen
+---------|------------
+GR       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
+CO       | $" ...))) :EVAL NIL)
+5: (SB-ACLREPL::REP-ONE)
+6: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
+7: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
+8: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
+9: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {100704C07B}>)
+10: (SB-IMPL::TOPLEVEL-REPL NIL)
+11: (SB-IMPL::TOPLEVEL-INIT)
+12: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
+13: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
+
+unhandled condition in --disable-debugger mode, quitting
+>>>>>>> 87122daf30bb7e9ec07bbc36cadbdf7c0f90af70
 
