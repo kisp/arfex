@@ -1,3 +1,17 @@
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/load-data-hash/'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmp2KPVYDA8.tmp' &>'/tmp/tmp96FLK53O.tmp'' returned 1
+
 
 ARFE(3): 
 
@@ -7,102 +21,32 @@ ARFE(4):
 
 ARFE(4): 
 
-ARFE(4): (ql:quickload "md5")
-To load "md5":
-  Load 1 ASDF system:
-    md5
-; Loading "md5"
+ARFE(4): (slow)
+Unhandled SLOW in thread #<SB-THREAD:THREAD "main thread" RUNNING
+                            {1006105F43}>:
+  Condition SLOW was signalled.
 
-("md5")
-ARFE(5): 
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {1006105F43}>
+0: ((LAMBDA NIL :IN SB-DEBUG::FUNCALL-WITH-DEBUG-IO-SYNTAX))
+1: (SB-IMPL::CALL-WITH-SANE-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-DEBUG::FUNCALL-WITH-DEBUG-IO-SYNTAX) {100709CCAB}>)
+2: (SB-IMPL::%WITH-STANDARD-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-DEBUG::FUNCALL-WITH-DEBUG-IO-SYNTAX) {100709CC7B}>)
+3: (SB-DEBUG:PRINT-BACKTRACE :STREAM #<BROADCAST-STREAM {10070532B3}> :START 0 :FROM :INTERRUPTED-FRAME :COUNT NIL :PRINT-THREAD T :PRINT-FRAME-SOURCE NIL :METHOD-FRAME-STYLE NIL)
+4: (SB-DEBUG::DEBUGGER-DISABLED-HOOK #<SLOW {1007099C83}> #<unavailable argument>)
+5: (SB-DEBUG::RUN-HOOK SB-EXT:*INVOKE-DEBUGGER-HOOK* #<SLOW {1007099C83}>)
+6: (INVOKE-DEBUGGER #<SLOW {1007099C83}>)
+7: (CERROR "continue with slow example" SLOW :SLOW-PATHNAME NIL)
+8: (SB-INT:SIMPLE-EVAL-IN-LEXENV (SLOW) #<NULL-LEXENV>)
+9: (EVAL (SLOW))
+10: (SB-EXT:INTERACTIVE-EVAL (SLOW) :EVAL NIL)
+11: (SB-ACLREPL::REP-ONE)
+12: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
+13: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
+14: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
+15: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {100704407B}>)
+16: (SB-IMPL::TOPLEVEL-REPL NIL)
+17: (SB-IMPL::TOPLEVEL-INIT)
+18: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
+19: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
 
-ARFE(5): (deftype octet () '(unsigned-byte 8))
+unhandled condition in --disable-debugger mode, quitting
 
-OCTET
-ARFE(6): 
-
-ARFE(6): (defvar *available-symbols* (mapcar 'data-file2symbol (list-data-files)))
-
-*AVAILABLE-SYMBOLS*
-ARFE(7): 
-
-ARFE(7): (defun calc-hash! (list)
-  (let ((state (md5:make-md5-state)))
-    (dolist (item (sort list #'< :key #'cdr))
-      (let* ((string
-               (with-output-to-string (output)
-                 (print item output)))
-             (vector (make-array (length string)
-                                 :element-type 'octet
-                                 :initial-contents (map 'list #'char-code string))))
-        (md5:update-md5-state state vector)))
-    (md5:finalize-md5-state state)))
-
-CALC-HASH!
-ARFE(8): 
-
-ARFE(8): (dolist (symbol *available-symbols*)
-  (load-data symbol)
-  (print symbol)
-  (print (length (symbol-value symbol)))
-  (print (calc-hash! (symbol-value symbol)))
-  (unload-data symbol)
-  (terpri))
-Loading /root/quicklisp/local-projects/arfe/data/4-connected.gz...
-
-*4-CONNECTED* 
-2818 
-#(255 69 131 207 172 176 22 56 145 82 91 63 92 204 111 247) 
-Loading /root/quicklisp/local-projects/arfe/data/4-ir-connected.gz...
-
-*4-IR-CONNECTED* 
-199 
-#(166 131 204 85 250 188 17 68 129 195 118 235 80 7 27 207) 
-Loading /root/quicklisp/local-projects/arfe/data/4-ir.gz...
-
-*4-IR* 
-218 
-#(13 212 196 15 111 85 214 47 227 40 49 93 136 3 252 25) 
-Loading /root/quicklisp/local-projects/arfe/data/4.gz...
-
-*4* 
-3044 
-#(189 200 108 58 206 242 113 31 254 23 49 140 238 251 69 229) 
-Loading /root/quicklisp/local-projects/arfe/data/5-connected.gz...
-
-*5-CONNECTED* 
-285382 
-#(115 153 43 153 10 230 251 146 56 205 49 126 63 115 231 74) 
-Loading /root/quicklisp/local-projects/arfe/data/5-ir-connected.gz...
-
-*5-IR-CONNECTED* 
-9364 
-#(214 128 80 46 116 125 57 170 161 62 147 160 213 235 170 206) 
-Loading /root/quicklisp/local-projects/arfe/data/5-ir.gz...
-
-*5-IR* 
-9608 
-#(253 196 24 133 62 32 126 22 147 56 162 197 156 48 24 67) 
-Loading /root/quicklisp/local-projects/arfe/data/5.gz...
-
-*5* 
-291968 
-#(127 182 159 179 222 116 15 137 167 165 25 41 202 241 245 95) 
-Loading /root/quicklisp/local-projects/arfe/data/6-ir-connected.gz...
-
-*6-IR-CONNECTED* 
-1530843 
-#(68 44 39 59 121 192 194 173 175 49 173 94 137 246 158 1) 
-Loading /root/quicklisp/local-projects/arfe/data/6-ir.gz...
-
-*6-IR* 
-1540944 
-#(71 95 217 95 192 218 59 163 183 125 98 244 82 201 61 175) 
-NIL
-ARFE(9): 
-
-ARFE(9): 
-
-ARFE(9): 
-
-ARFE(9): (DRIBBLE) 
