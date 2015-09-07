@@ -1,3 +1,5 @@
+(slow)
+
 (ql:quickload "md5")
 
 (deftype octet () '(unsigned-byte 8))

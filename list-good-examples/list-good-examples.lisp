@@ -1,3 +1,5 @@
+(slow)
+
 (load-data '*4-ir* '*4*)
 
 (length (list-good-examples (generate-non-isomorphic 2 :irreflexive t)))
