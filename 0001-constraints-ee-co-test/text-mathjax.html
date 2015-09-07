@@ -1,0 +1,73 @@
+<h1 id="test">test</h1>
+<p>Ein Graph <em>g</em> mit Knoten <span class="math">\(\{\,a,b,c,d,e\,\} \)</span> und Kanten <span class="math">\(\{\,(e,c),(d,e),(c,d),(b,a),(a,c),(a,b)\,\} \)</span>.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Semantik</th>
+<th align="left">Extensionen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">GR</td>
+<td align="left"><span class="math">\(\{\,\{\,\,\}\,\} \)</span></td>
+</tr>
+<tr class="even">
+<td align="left">CO</td>
+<td align="left"><span class="math">\(\{\,\{\,\,\},\{\,b\,\},\{\,a,d\,\}\,\} \)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">ST</td>
+<td align="left"><span class="math">\(\{\,\{\,a,d\,\}\,\} \)</span></td>
+</tr>
+<tr class="even">
+<td align="left">PR</td>
+<td align="left"><span class="math">\(\{\,\{\,b\,\},\{\,a,d\,\}\,\} \)</span></td>
+</tr>
+</tbody>
+</table>
+<h1 id="eingabe-af">Eingabe AF</h1>
+<p>Gegeben sei ein AF</p>
+<p><span class="math">\[ F = (A,R) \]</span></p>
+<p>mit</p>
+<p><span class="math">\[ A = \{a_1,a_2,\dots,a_n\} \]</span></p>
+<p>einer Menge von <span class="math">\(n\)</span> Argumenten und</p>
+<p><span class="math">\[ R \subseteq A \times A \]</span></p>
+<p>einer Angriffsrelation.</p>
+<h2 id="beispiel">Beispiel</h2>
+<h3 id="alt">alt</h3>
+<p>Gegeben ist das AF</p>
+<p><span class="math">\[ F = (A,R) \]</span></p>
+<p>mit</p>
+<p><span class="math">\[ A = \{a_1,a_2,a_3\} \]</span></p>
+<p>und</p>
+<p><span class="math">\[ R = \{(a_1,a_2), (a_3,a_2), (a_1,a_1)\} .\]</span></p>
+<h3 id="neu">neu</h3>
+<p>Gegeben ist das AF</p>
+<p><span class="math">\[ F = (A,R) \]</span></p>
+<p>mit</p>
+<p><span class="math">\[ A = \{\,a,b,c,d,e\,\} \]</span></p>
+<p>und</p>
+<p><span class="math">\[ R = \{\,(e,c),(d,e),(c,d),(b,a),(a,c),(a,b)\,\} .\]</span></p>
+<h1 id="problem">Problem</h1>
+<p>Es soll ein CSP fuer <em>EE-CO</em> erstellt werden. Dabei soll jede Loesung des CSP einer Extension in <span class="math">\(Cmpl(F)\)</span> entsprechen.</p>
+<h1 id="csp">CSP</h1>
+<p>Unser CSP soll <span class="math">\(2n\)</span> Variablen haben, also doppet so viele Variablen, wie das AF Argumente hat.</p>
+<p>Das CSP <span class="math">\(\mathscr{P}\)</span> ist ein Tripel</p>
+<p><span class="math">\[ \mathscr{P} = (X,D,C) \]</span></p>
+<p>mit <span class="math">\(X = \{x_1,x_2,\dots,x_{2n}\} \)</span> einer Menge von Variablen, <span class="math">\(D = (D_{x_1},D_{x_2},\dots,D_{x_{2n}}) \)</span> einem <span class="math">\(2n\)</span>-Tupel endlicher Domaenen und <span class="math">\(C\)</span> einer Menge von Constraints.</p>
+<p>Die Variablen sind alle boolsche Variablen, also gilt fuer die jeweiligen Domaenen <span class="math">\[ D_{x_i} = \{true, false\} \quad\text{fuer alle}\quad 1\leq i \leq 2n .\]</span></p>
+<h1 id="variablen-des-csp">Variablen des CSP</h1>
+<p>Die Variablen</p>
+<p><span class="math">\[ X  = \{x_1,x_2,\dots,x_n,x&#39;_1,x&#39;_2,\dots,x&#39;_n\} = X_{\phi} \cup X_{\phi&#39;} \]</span></p>
+<p>des CSP setzen sich aus zwei Mengen <span class="math">\[X_{\phi} = \{x_1,x_2,\dots,x_n\}
+\]</span> und <span class="math">\[X_{\phi&#39;} = \{x&#39;_1,x&#39;_2,\dots,x&#39;_n\} \]</span> zusammen.</p>
+<p>Wir definieren zwei Bijektionen <span class="math">\(\phi \colon A \to X_{\phi}\)</span> und <span class="math">\(\phi&#39; \colon A \to X_{\phi&#39;}\)</span> mit</p>
+<p><span class="math">\[ \phi(a_i) = x_i \quad \text{fuer} \quad 1 \leq i \leq  n \]</span></p>
+<p>und</p>
+<p><span class="math">\[ \phi&#39;(a_i) = x&#39;_i \quad \text{fuer} \quad 1 \leq i \leq  n,\]</span></p>
+<p>die jeweils jedem Argument in <span class="math">\(A\)</span> eineindeutig eine Variable in <span class="math">\(X_{\phi}\)</span> bzw. <span class="math">\(X_{\phi&#39;}\)</span> zuordnen. Die Variablenmengen <span class="math">\(X_{\phi}\)</span> bzw. <span class="math">\(X_{\phi&#39;}\)</span> sind dann durch das Bild der jewiligen Abbildung gegeben:</p>
+<p><span class="math">\[ X_{\phi}  = \phi(A) = \{ \phi(a) \,|\, a \in A \} \]</span> <span class="math">\[ X_{\phi&#39;}  = \phi&#39;(A) = \{ \phi&#39;(a) \,|\, a \in A \} \]</span></p>
+<h2 id="beispiel-1">Beispiel</h2>
+<p>In unserem Beispiel gilt</p>
+<p><span class="math">\[ X_{\phi} = \{x_1,x_2,x_3\} \]</span> und <span class="math">\[ X_{\phi&#39;} = \{x_1&#39;,x_2&#39;,x_3&#39;\}\]</span> und daher <span class="math">\[ X = \{x_1,x_2,x_3,x_1&#39;,x_2&#39;,x_3&#39;\}.\]</span></p>
