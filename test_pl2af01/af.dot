@@ -1,4 +1,4 @@
-DIGRAPH to_dot {
+digraph to_dot {
   rankdir=LR;
   "a1" ;
   "a2" ;

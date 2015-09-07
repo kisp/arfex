@@ -1,10 +1,68 @@
-ARFE: (in-readtable* arfe)
-arfe
+process $ /usr/bin/docker 'run'
+'-v'
+'/root/arfex:/root/arfex'
+'-v'
+'/tmp:/tmp'
+'-w'
+'/root/arfex/ex1/'
+'--rm'
+'kisp/arfe'
+'/bin/bash'
+'-c'
+'arfe
+--disable-debugger <'/tmp/tmpIGJ98JSU.tmp' &>'/tmp/tmpP7GRL47U.tmp'' returned 1
 
-ARFE: (write-line
-       (with-output-to-string (#:g1190)
-         (write-string "foo bar " #:g1190)
-         (princ (progn (+ 2 10100)) #:g1190)))
+
+ARFE(3): 
+
+ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
+NIL
+ARFE(4): 
+
+ARFE(4): 
+
+ARFE(4): (in-readtable* arfe)
+
+arfe
+ARFE(5): 
+
+ARFE(5): (write-line #?[foo bar ${(+ 2 10100)}])
 foo bar 10102
-foo bar 10102
+"foo bar 10102"
+ARFE(6): 
+
+ARFE(6): 
+
+ARFE(6): 
+
+ARFE(6): (DRIBBLE) ; in: DRIBBLE
+;     (ARFE::|dribble|)
+; 
+; caught style-warning:
+;   undefined function: DRIBBLE
+; 
+; compilation unit finished
+;   Undefined function:
+;     DRIBBLE
+;   caught 1 STYLE-WARNING condition
+Unhandled undefined-function in thread #<sb-thread:thread "main thread" running
+                                          {1006105EC3}>:
+  The function arfe::DRIBBLE is undefined.
+
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {1006105EC3}>
+0: ("undefined function")
+1: (SB-INT:SIMPLE-EVAL-IN-LEXENV (|dribble|) #<NULL-LEXENV>)
+2: (EVAL (|dribble|))
+3: (SB-EXT:INTERACTIVE-EVAL (|dribble|) :EVAL NIL)
+4: (SB-ACLREPL::REP-ONE)
+5: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
+6: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
+7: ((LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL))
+8: (SB-IMPL::%WITH-REBOUND-IO-SYNTAX #<CLOSURE (LAMBDA NIL :IN SB-IMPL::TOPLEVEL-REPL) {1007048CEB}>)
+9: (SB-IMPL::TOPLEVEL-REPL NIL)
+10: (SB-IMPL::TOPLEVEL-INIT)
+11: ((FLET #:WITHOUT-INTERRUPTS-BODY-85 :IN SB-EXT:SAVE-LISP-AND-DIE))
+12: ((LABELS SB-IMPL::RESTART-LISP :IN SB-EXT:SAVE-LISP-AND-DIE))
+
+unhandled condition in --disable-debugger mode, quitting
 
