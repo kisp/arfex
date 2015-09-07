@@ -10,6 +10,10 @@
 	  (princ x))
 	(terpri))))
 
+(defun pprint-to-string (x)
+  (with-output-to-string (*standard-output*)
+    (pprint x)))
+
 (defun m$ (x) (format nil "$~A$" x))
 
 (defun items (&rest args)
@@ -169,6 +173,12 @@ $$ X = \{x_1,x_2,x_3,x_1',x_2',x_3'\}.$$
 $$,(defparameter *constraints* (mapcar (lambda (e) `(not (and ,@e))) (edges *g*)))$$
 
 ,(apply #'items (mapcar #'m$ (mapcar #'latex-log *constraints*)))
+
+Der Wert von `*constraints*` ist:
+
+~~~~~~~~~~~~~~~
+,(pprint-to-string *constraints*)
+~~~~~~~~~~~~~~~
 
 ]
 ))
