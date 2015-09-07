@@ -198,10 +198,10 @@ Der Wert von `*constraints*` ist:
 
 ")))
 
-;     (MAPCAR #'G1249::LATEX-LOG G1249::*CONSTRAINTS*)
+;     (MAPCAR #'G1313::LATEX-LOG G1313::*CONSTRAINTS*)
 ; --> LET LET SB-INT:DO-ANONYMOUS BLOCK 
 ; ==>
-;   (LET ((#:G30 #:G31) (#:G28 G1249::*CONSTRAINTS*))
+;   (LET ((#:G30 #:G31) (#:G28 G1313::*CONSTRAINTS*))
 ;     (TAGBODY
 ;       (GO #:G34)
 ;      #:G33
@@ -214,7 +214,7 @@ Der Wert von `*constraints*` ist:
 ; caught warning:
 ;   undefined variable: *constraints*
 
-;     (GRAPH:NODES G1249::*G*)
+;     (GRAPH:NODES G1313::*G*)
 ; 
 ; caught warning:
 ;   undefined variable: *g*

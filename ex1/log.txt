@@ -2,9 +2,9 @@ ARFE: (IN-READTABLE* ARFE)
 arfe
 
 ARFE: (write-line
-       (with-output-to-string (#:g1253)
-         (write-string "foo bar " #:g1253)
-         (princ (progn (+ 2 10100)) #:g1253)))
+       (with-output-to-string (#:g1317)
+         (write-string "foo bar " #:g1317)
+         (princ (progn (+ 2 10100)) #:g1317)))
 foo bar 10102
 foo bar 10102
 
