@@ -48,8 +48,22 @@
 
 \section{test}\label{test}
 
-Ein Graph \emph{g} mit Knoten $\{\,a,b,c,d,e\,\} $ und Kanten
-$\{\,(e,c),(d,e),(c,d),(b,a),(a,c),(a,b)\,\} $.
+$\{\,x_1,x_2\,\} $
+
+\begin{longtable}[c]{@{}ll@{}}
+\toprule\addlinespace
+$x$ & $f(x)$
+\\\addlinespace
+\midrule\endhead
+$a$ & $x_1$
+\\\addlinespace
+$b$ & $x_2$
+\\\addlinespace
+\bottomrule
+\end{longtable}
+
+Ein Graph \emph{g} mit Knoten $\{\,a_1,a_2,a_3,a_4,a_5\,\} $ und Kanten
+$\{\,(a_5,a_3),(a_4,a_5),(a_3,a_4),(a_2,a_1),(a_1,a_3),(a_1,a_2)\,\} $.
 
 \begin{longtable}[c]{@{}ll@{}}
 \toprule\addlinespace
@@ -58,11 +72,11 @@ Semantik & Extensionen
 \midrule\endhead
 GR & $\{\,\{\,\,\}\,\} $
 \\\addlinespace
-CO & $\{\,\{\,\,\},\{\,b\,\},\{\,a,d\,\}\,\} $
+CO & $\{\,\{\,\,\},\{\,a_2\,\},\{\,a_1,a_4\,\}\,\} $
 \\\addlinespace
-ST & $\{\,\{\,a,d\,\}\,\} $
+ST & $\{\,\{\,a_1,a_4\,\}\,\} $
 \\\addlinespace
-PR & $\{\,\{\,b\,\},\{\,a,d\,\}\,\} $
+PR & $\{\,\{\,a_2\,\},\{\,a_1,a_4\,\}\,\} $
 \\\addlinespace
 \bottomrule
 \end{longtable}
@@ -107,11 +121,11 @@ Gegeben ist das AF
 
 mit
 
-\[ A = \{\,a,b,c,d,e\,\} \]
+\[ A = \{\,a_1,a_2,a_3,a_4,a_5\,\} \]
 
 und
 
-\[ R = \{\,(e,c),(d,e),(c,d),(b,a),(a,c),(a,b)\,\} .\]
+\[ R = \{\,(a_5,a_3),(a_4,a_5),(a_3,a_4),(a_2,a_1),(a_1,a_3),(a_1,a_2)\,\} .\]
 
 \section{Problem}\label{problem}
 
@@ -167,5 +181,27 @@ In unserem Beispiel gilt
 
 \[ X_{\phi} = \{x_1,x_2,x_3\} \] und \[ X_{\phi'} = \{x_1',x_2',x_3'\}\]
 und daher \[ X = \{x_1,x_2,x_3,x_1',x_2',x_3'\}.\]
+
+\section{Konfliktfreiheit}\label{konfliktfreiheit}
+
+\subsection{Beispiel}\label{beispiel-2}
+
+\[*constraints*\]
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  $\lnot ( a_5 \land a_3 ) $
+\item
+  $\lnot ( a_4 \land a_5 ) $
+\item
+  $\lnot ( a_3 \land a_4 ) $
+\item
+  $\lnot ( a_2 \land a_1 ) $
+\item
+  $\lnot ( a_1 \land a_3 ) $
+\item
+  $\lnot ( a_1 \land a_2 ) $
+\end{itemize}
 
 \end{document}

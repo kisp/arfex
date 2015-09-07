@@ -1,54 +1,26 @@
+ARFE: (defparameter *g* (pl2af '(x (not y) (imp x y))))
+*g*
 
-ARFE(3): 
+ARFE: (defparameter *args* (nth-value 1 (pl2af '(x (not y) (imp x y)))))
+*args*
 
-ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
-NIL
-ARFE(4): 
+ARFE: (with-open-file (out "af.dot" :direction :output :if-exists :supersede)
+        (print-af-to-dot *g* out))
+nil
 
-ARFE(4): 
-
-ARFE(4): (defparameter *g* (pl2af '(x (not y) (imp x y))))
-
-*G*
-ARFE(5): 
-
-ARFE(5): (defparameter *args* (nth-value 1 (pl2af '(x (not y) (imp x y)))))
-
-*ARGS*
-ARFE(6): 
-
-ARFE(6): (with-open-file (out "af.dot" :direction :output :if-exists :supersede)
-  (print-af-to-dot *g* out))
-
-NIL
-ARFE(7): 
-
-ARFE(7): (uiop:run-program "dot -Tpdf af.dot >af.pdf")
-
-NIL
-NIL
+ARFE: (uiop/run-program:run-program "dot -Tpdf af.dot >af.pdf")
+nil
+nil
 0
-ARFE(8): 
 
-ARFE(8): (uiop:run-program "dot -Tpng af.dot >af.png")
-
-NIL
-NIL
+ARFE: (uiop/run-program:run-program "dot -Tpng af.dot >af.png")
+nil
+nil
 0
-ARFE(9): 
 
-ARFE(9): (list-extensions *g* #'stable-extension-p)
+ARFE: (list-extensions *g* #'stable-extension-p)
+((a2 a3 a6) (a1 a3 a5) (a1 a2 a4))
 
-((A2 A3 A6) (A1 A3 A5) (A1 A2 A4))
-ARFE(10): 
+ARFE: (list-extensions *g* #'complete-extension-p)
+(nil (a2 a3 a6) (a1 a3 a5) (a1 a2 a4))
 
-ARFE(10): (list-extensions *g* #'complete-extension-p)
-
-(NIL (A2 A3 A6) (A1 A3 A5) (A1 A2 A4))
-ARFE(11): 
-
-ARFE(11): 
-
-ARFE(11): 
-
-ARFE(11): (DRIBBLE) 

@@ -1,5 +1,24 @@
 <h1 id="test">test</h1>
-<p>Ein Graph <em>g</em> mit Knoten <span class="math">\(\{\,a,b,c,d,e\,\} \)</span> und Kanten <span class="math">\(\{\,(e,c),(d,e),(c,d),(b,a),(a,c),(a,b)\,\} \)</span>.</p>
+<p><span class="math">\(\{\,x_1,x_2\,\} \)</span></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"><span class="math">\(x\)</span></th>
+<th align="left"><span class="math">\(f(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><span class="math">\(a\)</span></td>
+<td align="left"><span class="math">\(x_1\)</span></td>
+</tr>
+<tr class="even">
+<td align="left"><span class="math">\(b\)</span></td>
+<td align="left"><span class="math">\(x_2\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Ein Graph <em>g</em> mit Knoten <span class="math">\(\{\,a_1,a_2,a_3,a_4,a_5\,\} \)</span> und Kanten <span class="math">\(\{\,(a_5,a_3),(a_4,a_5),(a_3,a_4),(a_2,a_1),(a_1,a_3),(a_1,a_2)\,\} \)</span>.</p>
 <table>
 <thead>
 <tr class="header">
@@ -14,15 +33,15 @@
 </tr>
 <tr class="even">
 <td align="left">CO</td>
-<td align="left"><span class="math">\(\{\,\{\,\,\},\{\,b\,\},\{\,a,d\,\}\,\} \)</span></td>
+<td align="left"><span class="math">\(\{\,\{\,\,\},\{\,a_2\,\},\{\,a_1,a_4\,\}\,\} \)</span></td>
 </tr>
 <tr class="odd">
 <td align="left">ST</td>
-<td align="left"><span class="math">\(\{\,\{\,a,d\,\}\,\} \)</span></td>
+<td align="left"><span class="math">\(\{\,\{\,a_1,a_4\,\}\,\} \)</span></td>
 </tr>
 <tr class="even">
 <td align="left">PR</td>
-<td align="left"><span class="math">\(\{\,\{\,b\,\},\{\,a,d\,\}\,\} \)</span></td>
+<td align="left"><span class="math">\(\{\,\{\,a_2\,\},\{\,a_1,a_4\,\}\,\} \)</span></td>
 </tr>
 </tbody>
 </table>
@@ -46,9 +65,9 @@
 <p>Gegeben ist das AF</p>
 <p><span class="math">\[ F = (A,R) \]</span></p>
 <p>mit</p>
-<p><span class="math">\[ A = \{\,a,b,c,d,e\,\} \]</span></p>
+<p><span class="math">\[ A = \{\,a_1,a_2,a_3,a_4,a_5\,\} \]</span></p>
 <p>und</p>
-<p><span class="math">\[ R = \{\,(e,c),(d,e),(c,d),(b,a),(a,c),(a,b)\,\} .\]</span></p>
+<p><span class="math">\[ R = \{\,(a_5,a_3),(a_4,a_5),(a_3,a_4),(a_2,a_1),(a_1,a_3),(a_1,a_2)\,\} .\]</span></p>
 <h1 id="problem">Problem</h1>
 <p>Es soll ein CSP fuer <em>EE-CO</em> erstellt werden. Dabei soll jede Loesung des CSP einer Extension in <span class="math">\(Cmpl(F)\)</span> entsprechen.</p>
 <h1 id="csp">CSP</h1>
@@ -71,3 +90,14 @@
 <h2 id="beispiel-1">Beispiel</h2>
 <p>In unserem Beispiel gilt</p>
 <p><span class="math">\[ X_{\phi} = \{x_1,x_2,x_3\} \]</span> und <span class="math">\[ X_{\phi&#39;} = \{x_1&#39;,x_2&#39;,x_3&#39;\}\]</span> und daher <span class="math">\[ X = \{x_1,x_2,x_3,x_1&#39;,x_2&#39;,x_3&#39;\}.\]</span></p>
+<h1 id="konfliktfreiheit">Konfliktfreiheit</h1>
+<h2 id="beispiel-2">Beispiel</h2>
+<p><span class="math">\[*constraints*\]</span></p>
+<ul>
+<li><span class="math">\(\lnot ( a_5 \land a_3 ) \)</span></li>
+<li><span class="math">\(\lnot ( a_4 \land a_5 ) \)</span></li>
+<li><span class="math">\(\lnot ( a_3 \land a_4 ) \)</span></li>
+<li><span class="math">\(\lnot ( a_2 \land a_1 ) \)</span></li>
+<li><span class="math">\(\lnot ( a_1 \land a_3 ) \)</span></li>
+<li><span class="math">\(\lnot ( a_1 \land a_2 ) \)</span></li>
+</ul>

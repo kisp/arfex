@@ -1,24 +1,10 @@
+ARFE: (in-readtable* arfe)
+arfe
 
-ARFE(3): 
-
-ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
-NIL
-ARFE(4): 
-
-ARFE(4): 
-
-ARFE(4): (in-readtable* arfe)
-
-ARFE
-ARFE(5): 
-
-ARFE(5): (write-line #?[foo bar ${(+ 2 10100)}])
+ARFE: (write-line
+       (with-output-to-string (#:g1190)
+         (write-string "foo bar " #:g1190)
+         (princ (progn (+ 2 10100)) #:g1190)))
 foo bar 10102
-"foo bar 10102"
-ARFE(6): 
+foo bar 10102
 
-ARFE(6): 
-
-ARFE(6): 
-
-ARFE(6): (DRIBBLE) 
