@@ -10,7 +10,7 @@ process $ /usr/bin/docker 'run'
 '/bin/bash'
 '-c'
 'arfe
---disable-debugger <'/tmp/tmpG6RL7DFQ.tmp' &>'/tmp/tmp523HMA4J.tmp'' returned 1
+--disable-debugger <'/tmp/tmpSE0QLD5B.tmp' &>'/tmp/tmp65JBUOWY.tmp'' returned 1
 
 
 ARFE(3): 
@@ -39,37 +39,64 @@ ARFE(5): (defun emit (list)
 EMIT
 ARFE(6): 
 
-ARFE(6): (defun latex-set (list)
+ARFE(6): (defun m$ (x) (format nil "$~A$" x))
+
+M$
+ARFE(7): 
+
+ARFE(7): (defun items (&rest args)
+  (format nil "~{- ~A~%~}" args))
+
+ITEMS
+ARFE(8): 
+
+ARFE(8): (defun latex-set (list)
   (format nil "\\{\\,~{~A~^,~}\\,\\}" list))
 
 LATEX-SET
-ARFE(7): 
+ARFE(9): 
 
-ARFE(7): (defun latex-tuple (list)
+ARFE(9): (defun latex-tuple (list)
   (format nil "(~{~A~^,~})" list))
 
 LATEX-TUPLE
-ARFE(8): 
+ARFE(10): 
 
-ARFE(8): (defun latex-rel (list)
+ARFE(10): (defun latex-rel (list)
   (format nil "\\{\\,~{~A~^,~}\\,\\}" (mapcar 'latex-tuple list)))
 
 LATEX-REL
-ARFE(9): 
+ARFE(11): 
 
-ARFE(9): (defun latex-set-set (list)
+ARFE(11): (defun latex-set-set (list)
   (latex-set (mapcar 'latex-set list)))
 
 LATEX-SET-SET
-ARFE(10): 
+ARFE(12): 
 
-ARFE(10): (with-open-file (*standard-output* "text.md"
+ARFE(12): (defun latex-log (x)
+  (with-output-to-string (*standard-output*)
+    (clpl:print-latex x)))
+
+LATEX-LOG
+ARFE(13): 
+
+ARFE(13): 
+
+ARFE(13): (with-open-file (*standard-output* "text.md"
 				   :direction :output
 				   :if-exists :supersede)
   (emit
 [
 
 # test
+
+$,(latex-set '(x_1 x_2)) $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
 
 Ein Graph
 ,(defparameter *g* (convert-graph-to-abc-if-needed (from-adj '(5 . 13109284))))
@@ -186,11 +213,35 @@ $$ X_{\phi'} = \{x_1',x_2',x_3'\}$$
 und daher
 $$ X = \{x_1,x_2,x_3,x_1',x_2',x_3'\}.$$
 
+# Konfliktfreiheit
+
+## Beispiel
+
+$$,(defparameter *constraints* (mapcar (lambda (e) `(not (and ,@e))) (edges *g*)))$$
+
+,(apply #'items (mapcar #'m$ (mapcar #'latex-log *constraints*)))
+
 ]
 ))
 ; in:
 ;      WITH-OPEN-FILE (*STANDARD-OUTPUT* "text.md" :DIRECTION :OUTPUT :IF-EXISTS
 ;                  :SUPERSEDE)
+;     (MAPCAR #'ARFE::LATEX-LOG ARFE::*CONSTRAINTS*)
+; --> LET LET SB-INT:DO-ANONYMOUS BLOCK 
+; ==>
+;   (LET ((#:G28 #:G29) (#:G27 ARFE::*CONSTRAINTS*))
+;     (TAGBODY
+;       (GO #:G32)
+;      #:G31
+;       (TAGBODY (SB-KERNEL:%RPLACD #:G28 (SETQ #)))
+;       (PSETQ #:G27 (CDR #:G27))
+;      #:G32
+;       (UNLESS (OR (ENDP #:G27)) (GO #:G31))
+;       (RETURN-FROM #:G30 (PROGN (TRULY-THE LIST #)))))
+; 
+; caught WARNING:
+;   undefined variable: *CONSTRAINTS*
+
 ;     (GRAPH:NODES ARFE::*G*)
 ; 
 ; caught WARNING:
@@ -205,9 +256,9 @@ $$ X = \{x_1,x_2,x_3,x_1',x_2',x_3'\}.$$
 ; compilation unit finished
 ;   Undefined function:
 ;     CONVERT-GRAPH-TO-ABC-IF-NEEDED
-;   Undefined variable:
-;     *G*
-;   caught 1 WARNING condition
+;   Undefined variables:
+;     *CONSTRAINTS* *G*
+;   caught 2 WARNING conditions
 ;   caught 1 STYLE-WARNING condition
 Unhandled UNDEFINED-FUNCTION in thread #<SB-THREAD:THREAD "main thread" RUNNING
                                           {1006105FE3}>:
@@ -220,6 +271,13 @@ Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {1006105FE3}>
 
 # test
 
+$" (LATEX-SET (QUOTE #)) " $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
+
 Ein Graph
 " (DEFPARAMETER *G* (CONVERT-GRAPH-TO-ABC-IF-NEEDED #)) "
 mit Knoten $" (LATEX-SET (NODES *G*)) " $
@@ -228,12 +286,18 @@ und Kanten $" (LATEX-REL (EDGES *G*)) " $.
 Semantik | Extensionen
 ---------|------------
 GR       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
-CO       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
-ST       | $" ...))) #<NULL-LEXENV>)
+CO       | $" ...))) #<NULL-LEXENV>)
 3: (EVAL (WITH-OPEN-FILE (*STANDARD-OUTPUT* "text.md" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (EMIT (LIST "
 
 # test
 
+$" (LATEX-SET (QUOTE #)) " $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
+
 Ein Graph
 " (DEFPARAMETER *G* (CONVERT-GRAPH-TO-ABC-IF-NEEDED #)) "
 mit Knoten $" (LATEX-SET (NODES *G*)) " $
@@ -242,12 +306,18 @@ und Kanten $" (LATEX-REL (EDGES *G*)) " $.
 Semantik | Extensionen
 ---------|------------
 GR       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
-CO       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
-ST       | $" ...))))
+CO       | $" ...))))
 4: (SB-EXT:INTERACTIVE-EVAL (WITH-OPEN-FILE (*STANDARD-OUTPUT* "text.md" :DIRECTION :OUTPUT :IF-EXISTS :SUPERSEDE) (EMIT (LIST "
 
 # test
 
+$" (LATEX-SET (QUOTE #)) " $
+
+$x$     | $f(x)$
+--------|---------
+$a$     | $x_1$ 
+$b$     | $x_2$
+
 Ein Graph
 " (DEFPARAMETER *G* (CONVERT-GRAPH-TO-ABC-IF-NEEDED #)) "
 mit Knoten $" (LATEX-SET (NODES *G*)) " $
@@ -256,8 +326,7 @@ und Kanten $" (LATEX-REL (EDGES *G*)) " $.
 Semantik | Extensionen
 ---------|------------
 GR       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
-CO       | $" (LATEX-SET-SET (LIST-EXTENSIONS *G* #)) " $
-ST       | $" ...))) :EVAL NIL)
+CO       | $" ...))) :EVAL NIL)
 5: (SB-ACLREPL::REP-ONE)
 6: (SB-ACLREPL::REPL :BREAK-LEVEL 0 :NOPRINT NIL :INSPECT NIL :CONTINUABLE NIL)
 7: ((LAMBDA (SB-ACLREPL::NOPRINT) :IN SB-ACLREPL:MAKE-REPL-FUN) NIL)
