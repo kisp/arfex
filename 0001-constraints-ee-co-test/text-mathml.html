@@ -93,10 +93,14 @@
 <h2 id="beispiel-2">Beispiel</h2>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>*</mo><mi>c</mi><mi>o</mi><mi>n</mi><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>i</mi><mi>n</mi><mi>t</mi><mi>s</mi><mo>*</mo></mrow></math></p>
 <ul>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>A</mi><mn>5</mn></msub><mo>∧</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>A</mi><mn>4</mn></msub><mo>∧</mo><msub><mi>A</mi><mn>5</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>A</mi><mn>3</mn></msub><mo>∧</mo><msub><mi>A</mi><mn>4</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo>∧</mo><msub><mi>A</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>A</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mn>5</mn></msub><mo>∧</mo><msub><mi>a</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mn>4</mn></msub><mo>∧</mo><msub><mi>a</mi><mn>5</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mn>3</mn></msub><mo>∧</mo><msub><mi>a</mi><mn>4</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mn>2</mn></msub><mo>∧</mo><msub><mi>a</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>a</mi><mn>3</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>¬</mo><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>∧</mo><msub><mi>a</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></math></li>
 </ul>
+<p>Der Wert von <code>*constraints*</code> ist:</p>
+<pre><code>
+((not (and a_5 a_3)) (not (and a_4 a_5)) (not (and a_3 a_4))
+ (not (and a_2 a_1)) (not (and a_1 a_3)) (not (and a_1 a_2)))</code></pre>

@@ -1,13 +1,4 @@
-
-ARFE(3): 
-
-ARFE(3): (PROGN (SETQ *TRACE-OUTPUT* SB-IMPL::*DRIBBLE-STREAM*) NIL) 
-NIL
-ARFE(4): 
-
-ARFE(4): 
-
-ARFE(4): (nth-value 0 (generate-non-isomorphic 3))
+ARFE: (NTH-VALUE 0 (GENERATE-NON-ISOMORPHIC 3))
      100.0 % done. found 104
 ((3 . 511) (3 . 509) (3 . 475) (3 . 499) (3 . 413) (3 . 501) (3 . 437)
  (3 . 505) (3 . 473) (3 . 403) (3 . 497) (3 . 409) (3 . 433) (3 . 465)
@@ -24,10 +15,4 @@ ARFE(4): (nth-value 0 (generate-non-isomorphic 3))
  (3 . 432) (3 . 464) (3 . 296) (3 . 385) (3 . 264) (3 . 400) (3 . 272)
  (3 . 480) (3 . 224) (3 . 388) (3 . 136) (3 . 416) (3 . 160) (3 . 288)
  (3 . 448) (3 . 192) (3 . 384) (3 . 128) (3 . 256) (3 . 0))
-ARFE(5): 
 
-ARFE(5): 
-
-ARFE(5): 
-
-ARFE(5): (DRIBBLE) 
